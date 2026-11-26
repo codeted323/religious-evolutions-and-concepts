@@ -1,0 +1,156 @@
+# ---------- EAST ASIAN ----------
+hlo|Huang–Lao|eas|tao||-200|100|Han China|2|X|+king|The Han-era 'Yellow Emperor and Laozi' teaching of governing by non-action and longevity.|TA!
+tpd|Way of Great Peace (Taiping Dao)|eas|tao|hlo|170|205|Eastern China|3|X|+heal +apoc|Zhang Jue's healing movement, which launched the Yellow Turban Rebellion (184).|TA!
+xxu|Xuanxue (Neo-Daoism)|eas|tao|cnf|230|500|China|3|X||'Profound learning': Wang Bi and Guo Xiang reread Laozi and the Yijing during the Three Kingdoms period.|TA!
+ncm|Northern Celestial Masters|eas|cmt|mah|425|600|Northern Wei China|2|X|+monk|Kou Qianzhi's reformed Celestial Masters, a state religion under the Northern Wei, centered on Louguan.|TA!
+txn|Heavenly Heart (Tianxin) and Thunder Rites|eas|cmt||1000|-|China|2|L|+heal|Song-dynasty exorcistic ritual traditions that use thunder magic.|TA!
+sxo|Shenxiao|eas|cmt||1116|-|China|2|L||'Divine Empyrean' revelations promoted by Emperor Huizong.|-
+lmn|Longmen|eas|qzh||1650|-|China|3|L||The largest Quanzhen lineage, revived by Wang Kunyang (1552–1641) at the White Cloud Temple.|TA!
+jgm|Jingming (Pure Illumination)|eas|cmt|cnf|1300|-|Jiangxi, China|2|L|+fili|A Daoist school stressing loyalty and filial piety.|TA
+luo|Luo teaching|eas|wlt|pld|1509|1900|China|1|X|+fem|Luo Menghong's lay scriptures (baojuan), source of many later salvationist sects.|CS
+xtn|Xiantiandao|eas|luo||1650|-|China, Southeast Asia|1|L|+vegt|The 'Way of Former Heaven', a vegetarian salvationist lineage ancestral to Yiguandao and others.|CS
+gyd|Daoyuan (Red Swastika Society)|eas|cfo|tao|1921|-|China, Taiwan|3|L|+char +sync|A spirit-writing religion (Guiyidao) whose charity arm was the Red Swastika Society.|CS!
+zli|Zaili teaching|eas|cfo||1913|-|China, Taiwan|2|L|+alco|A salvationist sect of Guanyin devotion known for forbidding tobacco and alcohol. It was registered in 1913.|CS!
+tss|Tongshanshe|eas|xtn||1917|1950|China|3|X||'Fellowship United in Goodness', a large Republican-era salvationist society.|CS!
+jgd|Jiugongdao|eas|xtn||1926|-|China|2|L||'Way of the Nine Palaces', a salvationist sect.|CS!
+tdj|Tiandiism|eas|cfo|cnf,tao|1930|-|Taiwan|3|L|+medi|The 'Holy Church of Heavenly Virtue' (1930) and its offshoot, the Lord of Universe Church (1979).|CS!
+dej|De teaching (Dejiao)|eas|cfo||1945|-|Southeast Asia|3|L|+sync|A spirit-writing 'Church of Virtue' that unites five religions, strong among Chinese communities in Malaysia and Thailand.|CS!
+sny|Three-in-One teaching|eas|ncf|tao,mah|1550|-|Fujian|2|L|+sync|Lin Zhao'en's (1517–1598) unification of Confucianism, Daoism and Buddhism.|CS
+mzu|Mazuism|eas|cfo||987|-|Fujian, Taiwan, diaspora|2|L|+fem +pilg|Devotion to the sea goddess Mazu, deified after her death in 987.|-
+kcc|Confucian Church|eas|cnf||1912|-|China, Hong Kong, Indonesia|2|L|+cong|Kang Youwei and Chen Huanzhang's effort to make Confucianism a congregational religion.|-
+ysd|Yoshida Shintō|eas|sto|cnf,tao|1484|-|Japan|2|L||Yoshida Kanetomo's 'primal' Shintō claiming independence from Buddhism. It controlled shrine ranks for centuries.|-
+kkg|Kokugaku (Restoration Shintō)|eas|sto||1700|1900|Japan|3|X|+ethn|Motoori Norinaga and Hirata Atsutane's 'national learning', which sought a pure Shintō before Chinese and Buddhist influence.|-
+krz|Kurozumikyō|eas|sto||1814|-|Japan|3|L|+heal|Kurozumi Munetada's sun-goddess faith, the first of the sect Shinto groups.|JN!
+izm|Izumo Taishakyō|eas|sto||1882|-|Japan|2|L||A sect Shintō organization centered on Izumo Shrine.|-
+sni|Seichō-no-Ie|eas|omt|chs|1930|-|Japan, Brazil|3|L|+sync +heal|Masaharu Taniguchi's 'House of Growth', which blends Ōmoto ideas with New Thought healing.|JN!
+skk|Sekai Kyūseikyō|eas|omt||1935|-|Japan, Brazil|3|L|+heal|Mokichi Okada's 'Church of World Messianity', practising jōrei light-healing and nature farming.|JN!
+mhk|Sekai Mahikari Bunmei Kyōdan|eas|skk||1959|-|Japan|3|L|+heal|Kōtama Okada's Mahikari, which purifies through 'True Light' from the hand.|JN!
+smk|Sūkyō Mahikari|eas|mhk||1978|-|Japan and worldwide|3|L||A Mahikari split after the founder's death.|JN!
+plk|PL Kyōdan|eas|sto||1946|-|Japan|3|L||'Perfect Liberty': life is art. Refounded in 1946 from a 1925 parent group.|JN!
+tkj|Tenshō Kōtai Jingūkyō|eas|sto||1945|-|Japan|3|L|+danc +revl +foun|Sayo Kitamura's 'dancing religion', founded in the year of Japan's defeat.|JN!
+enn|Ennōkyō|eas|sto||1919|-|Japan|3|L|+revl|Chiyoko Fukada's revelatory Shinto sect.|JN!
+hmc|Honmichi|eas|tnr||1925|-|Japan|3|L||Ōnishi Aijirō's (1881–1958) Tenrikyō offshoot.|FL!
+gla|GLA (God Light Association)|eas|mah|tsp|1969|-|Japan|3|L|+sync|Shinji Takahashi's eclectic spiritual movement.|JN!
+hps|Happy Science|eas|gla||1986|-|Japan and worldwide|3|L|+foun +revl|Ryūhō Ōkawa's (1956–2023) movement, which hails him as El Cantare, the supreme spirit.|JN!
+jsn|Jeungsanism|eas|kmu|cdo,tao|1901|-|Korea|2|L|+mess +apoc|Followers of Kang Il-sun (Jeungsan), seen as the supreme god incarnate, who await a 'Later Heaven'.|-
+djj|Daejongism|eas|kmu||1909|-|Korea|2|L|+ethn|Worship of Dangun, the mythic founder of Korea, revived during Japanese rule.|-
+dsj|Daesun Jinrihoe|eas|jsn||1969|-|South Korea|2|L||The largest Jeungsanist order.|-
+dmu|Đạo Mẫu (Mother Goddess worship)|eas|cfo|pau|1550|-|Vietnam|2|L|+fem +danc -poss|Vietnamese worship of mother goddesses with hầu đồng mediumship rituals, in which mediums embody the deities while staying in control. Inscribed by UNESCO in 2016.|-
+# ---------- AFRICAN ----------
+nil|Nilotic traditional religions|afr|upa||-1000|-|South Sudan, Kenya, Uganda|1|L|=anim ance sky sacr divn oral init land|Dinka, Nuer and Maasai traditions of a sky creator (Nhialic, Kwoth, Enkai), cattle sacrifice and spirit-powers.|-
+mas|Maasai religion|afr|nil||1500|-|Kenya, Tanzania|1|L|+king|Enkai (Ngai), the dual-natured god, with the laibon (ritual expert) and age-set initiations.|-
+kik|Kikuyu religion|afr|bnt||1500|-|Kenya|1|L||Ngai on Mount Kenya, ancestral spirits and sacred fig trees.|-
+bwi|Bwiti|afr|bnt|roc|1600|-|Gabon, Cameroon|1|L|+ente +sync +init|Initiation religion of the Punu, Mitsogo and Fang of Gabon, said to come from Pygmy groups, using the iboga root. It honours ancestors and is often blended with Catholicism.|-
+waq|Waaqeffanna|afr|upa||-500|-|Oromia, Ethiopia|1|L|=mono oral land init pray ordr fest|The Oromo faith in one supreme creator, Waaqa, with Qaalluu priests and the Gadaa age-grade system. The Irreecha thanksgiving at Lake Hora Harsedi now draws millions.|-
+brb|Berber traditional religion|afr|neo|egy,pho|-1000|1100|North Africa|1|X|=poly ance anim sky offr divn oral|Worship of Amun-like and local deities, ancestors and sacred places among the Amazigh before Christianity and Islam.|-
+gch|Guanche religion|afr|brb||-500|1500|Canary Islands|1|X|+king +grav|Achamán the sky god and mummification of the dead. It ended with the Castilian conquest.|-
+god|Godianism|afr|igb|nco|1948|-|Nigeria|2|L|+mono +univ|K. O. K. Onyioha's pan-African 'Godian Religion' reinterpreting traditional faith.|-
+afk|Afrikania Mission|afr|aka|nco|1982|-|Ghana|2|L|+cong|Kwabena Damuah's reformed African traditional religion.|-
+# ---------- AFRO-ATLANTIC ----------
+wnt|Winti|afd|vdn|aka,kon|1700|-|Suriname, Netherlands|2|L|+sync|Afro-Surinamese spirit religion of possession by winti spirits.|-
+obh|Obeah|afd|aka|igb|1700|-|Caribbean|1|L||Caribbean healing and spiritual power practices of West African origin, long criminalized under colonial law.|LC
+kmn|Kumina|afd|kon||1850|-|Jamaica|2|L|+ance +danc|Kongo-derived ancestor rites brought by indentured Central Africans after emancipation.|-
+rvz|Revival Zion|afd|eva|kmn|1860|-|Jamaica|2|L|+poss +danc +heal|An Afro-Christian movement born in the Great Revival of 1860–61.|-
+spb|Spiritual Baptists|afd|bap|yor|1816|-|Trinidad and Caribbean|2|L|+poss +danc|A Shouter Baptist faith, banned in Trinidad from 1917 to 1951.|-
+tro|Trinidad Orisha (Shango)|afd|yor|roc|1850|-|Trinidad and Tobago|2|L|+sync|Yoruba orisha worship, with Shango prominent, among Trinidadians.|LC
+qmb|Quimbanda|afd|umb||1930|-|Brazil|2|L||Afro-Brazilian practice that grew alongside Umbanda, taking up what Umbanda rejected. It centres on the Exus and Pombagiras ('spirits of the left'), with rituals at crossroads.|-
+btq|Batuque|afd|yor||1850|-|Rio Grande do Sul, Brazil|2|L||Afro-Brazilian orixá worship of southern Brazil.|-
+tdm|Tambor de Mina|afd|vdn|yor|1840|-|Maranhão, Brazil|2|L||Afro-Brazilian worship of vodun and encantados, founded in São Luís's Casa das Minas.|-
+abk|Abakuá|afd|nco||1836|-|Cuba|2|L|+myst +init|A men's initiatory society from the Ekpe of the Cross River region.|-
+arr|Arará|afd|vdn||1800|-|Cuba|2|L||Cuban religion of the Fon and Ewe vodun.|LC
+esp|Espiritismo (Puerto Rican and Cuban)|afd|spi|roc,lus|1880|-|Puerto Rico, Cuba, USA|2|L|+sync|Kardecist Spiritism blended with Catholic and African elements.|LC
+hdo|Hoodoo|afd|kon|pro|1800|-|Southern USA|1|L|+heal +sync|African-American folk magic of roots, charms and Bible verses.|LC
+mli|María Lionza cult|afd|amz|roc,spi|1920|-|Venezuela|2|L|+poss +sync|Venezuelan devotion to the nature goddess María Lionza and a court of spirits.|-
+# ---------- AMERICAS ----------
+zpt|Zapotec religion|amr|olm||-500|1600|Oaxaca, Mexico|2|X|+ance +cycl|Cocijo the rain god and royal ancestors at Monte Albán.|-
+msc|Muisca religion|amr|pai||600|1563|Colombian Andes|2|X|+sky +offr|Sué the sun and Chía the moon, and offerings of gold (the origin of the El Dorado legend) at Lake Guatavita.|-
+mpc|Mapuche religion|amr|pai||500|-|Chile, Argentina|1|L|+sky +sacr +axis|Ngünechen the creator and machi healers, mostly women, who climb the rewe pole in trance. The ngillatun community prayer includes offerings and animal sacrifice.|-
+grn|Guaraní religion|amr|amz||500|-|Paraguay, Brazil|1|L|+apoc|Ñanderuvusu the creator and migrations toward the 'Land without Evil'.|-
+din|Diné (Navajo) religion|amr|pai|pue|1400|-|Southwestern USA|2|L|+heal +ordr +crwt|Hózhó (beauty, harmony), Holy People and sandpainting healing chantways.|-
+nwc|Pacific Northwest traditions|amr|pai||-1000|-|Pacific Northwest|1|L|+icon +danc +char|Guardian spirits, totem poles, winter ceremonies and the potlatch gift feast, which Canada banned from 1885 to 1951.|-
+kks|Kuksu religion|amr|pai||500|-|Northern California|1|L|+myst +danc|Secret societies and dances impersonating spirits.|-
+chk|Cherokee traditional religion|amr|mis||1600|-|Southeastern USA, Oklahoma|1|L|+fire|The Green Corn ceremony, a sacred fire and a medicine tradition.|-
+drm|Dreamer religion (Washat)|amr|nwc||1850|-|Columbia Plateau|2|L|+revl +apoc +land|Smohalla's prophetic revival of the Washani religion and Washat dance from about 1850, which urged a return to ancestral ways under God and Mother Earth.|-
+wix|Wixárika (Huichol) religion|amr|azt|roc|1500|-|Jalisco and Nayarit, Mexico|2|L|+ente +pilg|The peyote pilgrimage to Wirikuta and rites for the deer, maize and rain.|-
+udv|União do Vegetal|amr|sdm|spi|1961|-|Brazil and worldwide|3|L||Mestre Gabriel's (1922–1971) ayahuasca church.|FL!
+brq|Barquinha|amr|sdm||1945|-|Acre, Brazil|2|L||An ayahuasca religion with Marian and Afro-Brazilian elements.|-
+mfc|Mesoamerican folk Catholicism|amr|roc|azt,may|1550|-|Mexico, Central America|2|L|+sync +sain +ance|Day of the Dead, saint fiestas and cofradías, blending Catholic and Indigenous rites.|-
+smu|Santa Muerte devotion|amr|mfc||1940|-|Mexico, USA|2|L|+fem|A folk-saint cult of 'Holy Death', first reported in 1940s Mexico City and public since Enriqueta Romero opened a street shrine in 2001. It is condemned by the Catholic Church and has an estimated 12 million devotees.|-
+# ---------- OCEANIA & AUSTRONESIAN ----------
+thn|Tahitian religion ('Oro cult)|oce|pol||1000|1815|Society Islands|2|X|+myst +danc|The war god 'Oro, marae temples and the Arioi society of performers.|-
+tga|Tongan religion|oce|pol||500|1830|Tonga|2|X|+king|The sacred Tu'i Tonga paramount chiefs and gods of the sky and underworld (Pulotu).|-
+fij|Fijian religion|oce|pau|mel|-1000|1900|Fiji|1|X|+ance +king|The snake god Degei, ancestor gods and chiefly mana.|-
+pmr|Pai Mārire (Hauhau)|oce|mao|stj|1862|-|New Zealand|2|L|+revl +foun +apoc +sabb|Te Ua Haumēne's Māori prophetic faith (from 1862), which blended Old Testament morality with Māori spirituality during the New Zealand Wars. Much of it passed into Ringatū.|-
+pli|Paliau movement|oce|mel|pro|1946|-|Manus, Papua New Guinea|2|L|+just|Paliau Maloat's movement for church and social reform.|-
+khr|Kaharingan|oce|pau||1000|-|Central Kalimantan, Indonesia|1|L|+ance|The Dayak faith of Ranying Hatalla, with the Panaturan scripture and the Tiwah second funeral. It was grouped under Hinduism from 1980 and recognized as an indigenous belief in 2017.|-
+mrp|Marapu|oce|pau||1000|-|Sumba, Indonesia|1|L|+ance +sacr|Ancestor spirits, megalithic tombs and the Pasola ritual battle.|-
+pml|Parmalim|oce|pau|sto|1870|-|North Sumatra, Indonesia|2|L|+mono|Batak worship of Debata Mulajadi Nabolon, formalized by Raja Mulia Naipospos.|-
+snw|Sunda Wiwitan|oce|pau||1000|-|West Java, Indonesia|1|L|+land|Sundanese ancestral faith of the Baduy people.|-
+sbd|Subud|oce|kej|suf|1925|-|Indonesia and worldwide|2|L|+univ|Muhammad Subuh's latihan spiritual exercise, organized from 1947.|-
+rzl|Rizalista movements|chr|roc|fil|1900|-|Philippines|2|L|+inc +sync|Groups that venerate José Rizal as a Filipino Christ.|-
+# ---------- SOUTH & SOUTHEAST ASIAN INDIGENOUS ----------
+srn|Sarnaism|sas|upa||-1000|-|Jharkhand, Odisha, Bengal|1|L|=anim ance land oral fest offr sky|The sacred-grove (sarna) faith of the Munda, Santal, Ho and Oraon peoples, with pahan priests and deities such as Singbonga and Marang Buru. About 5 million people declared it in the 2011 census.|HD
+dnp|Donyi-Polo|sas|upa||-500|-|Arunachal Pradesh|1|L|=anim ance land oral fest sky offr sacr|The 'Sun–Moon' faith of the Adi and Tani peoples, organized as a religion from 1986.|-
+snm|Sanamahism|sas|upa|vai|-500|-|Manipur|1|L|=anim ance poly fest offr oral prie|The Meitei religion of the creator Sanamahi and Lainingthou deities, revived since the 1930s.|-
+krt|Kirat Mundhum|sas|upa|sha|-500|-|Eastern Nepal|1|L|=anim ance land oral fest offr prie|The oral scripture (Mundhum) and ancestor rites of the Kirati peoples.|-
+bth|Bathouism|sas|upa||-500|-|Assam|1|L|=anim ance poly oral fest offr|The Bodo worship of Bathou (Bwrai), represented by the sacred siju plant.|-
+kns|Niam Khasi|sas|upa||-500|-|Meghalaya|1|L|=anim ance mono oral fest|The Khasi faith in one God (U Blei), revived by the Seng Khasi in 1899.|-
+hrk|Heraka|sas|upa|vai|1927|-|Nagaland, Assam, Manipur|2|L|=mono oral fest foun|Jadonang and Rani Gaidinliu's reform of Zeme Naga religion around one god, Tingwang.|-
+klh|Kalash religion|sas|pii||-500|-|Chitral, Pakistan|1|L|=poly sacr fest pure oral ance sky|The last surviving Indo-Iranian polytheism. Its gods are Dezau and others, with goat sacrifice, purity rules and seasonal festivals.|-
+nrs|Nuristani religion|sas|pii||-500|1896|Kafiristan, Afghanistan|1|X|=poly sacr fest oral ance icon|The archaic Indo-Iranian polytheism of Imra and Gish, ended by forced conversion in 1895–96.|-
+phi|Satsana Phi|sas|upa|the|-500|-|Laos, Thailand|1|L|=anim ance offr poss oral fest|Tai worship of phi spirits, guardian spirits and spirit houses alongside Buddhism.|-
+nwt|Burmese Nat worship|sas|upa|the|300|-|Myanmar|2|L|=anim poly offr poss danc fest|Worship of the 37 nats, formalized under King Anawrahta in the 11th century: humans deified after death and nature spirits, honoured with possession dances by nat-kadaw mediums.|-
+hmg|Hmong religion|sas|upa|cfo|-500|-|Laos, Vietnam, China, USA|1|L|=anim ance sham heal oral offr|Shamans (txiv neeb) heal by recovering lost souls among spirits and ancestors.|-
+ahr|Ahom religion|sas|phi||1228|-|Assam|2|L|+ance +king|The Tai Ahom kingdom's worship of ancestors and sky gods, revived today.|-
+vdd|Veddah religion|sas|upa||-500|-|Sri Lanka|1|L|=anim ance oral|The Vedda people's cult of the dead: ancestral spirits (nae yaku) are invoked for hunting, with the kirikoraha offering and the deity Kande Yakka.|-
+# ---------- NORTHERN & CENTRAL ASIA ----------
+mgs|Mongolian shamanism|nea|sib|tng|1200|-|Mongolia, Buryatia|2|L|+king|Böö shamans and ovoo cairns, honoring the Eternal Blue Sky and ancestor spirits. It was revived after 1990.|-
+aay|Aar Aiyy (Sakha)|nea|sib|tng|1996|-|Yakutia|2|R|+cong|The revived Sakha faith in the White Creator, with the Ysyakh summer festival.|-
+vty|Vattisen Yaly (Chuvash)|nea|tng||1990|-|Chuvashia|2|R|+cong|The revived 'Tradition of the Old' faith of the Chuvash.|-
+udm|Udmurt Vos|nea|sib||500|-|Udmurtia|1|L|+sacr +land|Udmurt sacred groves and the god Inmar.|-
+hun|Hungarian Native Faith|nea|sib|tng|1990|-|Hungary|2|R|+cong|Modern revivals of pre-Christian Magyar religion.|-
+est|Maausk and Taaraism|nea|fin||1928|-|Estonia|2|R|+land|Estonian native faith revivals: Taaraism (1928) and Maausk ('earth faith').|-
+suo|Suomenusko|nea|fin||2002|-|Finland|2|R|+cong|Finnish native faith, a 20th-century reconstruction organized as Taivaannaula in 2002. The registered community Karhun kansa gained official minority-religion status in 2013.|-
+uat|Uatsdin (Ossetian religion)|nea|oir|nic|400|-|North Ossetia|1|L|+sacr +fest +mono|The Ossetian faith in one god (Xwytsau) and saints such as Uastyrdzhi, descended from Alan religion.|-
+scy|Scythian religion|ir|oir||-800|400|Pontic steppe|2|X|+sky +sacr|Herodotus's account names Tabiti the hearth goddess, Papaios and Api, with sword worship and horse sacrifice.|-
+hbz|Habze (Circassian religion)|nea|neo||500|-|North Caucasus|1|L|=mono ance ordr core hosp fest|The Adyghe ethical code and faith in Tha (Thashxwe), revived since the 1990s.|-
+hta|Hetanism|eur|pie||1990|-|Armenia|2|R|+cong +fire|A revival of the Armenian pagan gods (Aramazd, Vahagn) based in the temple of Garni.|-
+# ---------- EUROPE ----------
+dac|Dacian religion (Zalmoxis)|eur|pie||-500|106|Dacia (Romania)|1|X|+soul +hevh|Herodotus describes the Getae's god Zalmoxis, who promised immortality. It ended with the Roman conquest.|-
+sol|Sol Invictus|eur|rom|mit|274|400|Roman Empire|3|X|+mono|Aurelian made the 'Unconquered Sun' a chief official god in 274.|-
+fer|Feri tradition|gno|wic||1960|-|California|2|L|+myst|Victor Anderson's (1917–2001) ecstatic witchcraft.|FL
+dia|Dianic Wicca|gno|wic||1971|-|USA|2|L|-poly +just|Zsuzsanna Budapest's women-only Goddess worship.|-
+rcl|Reclaiming|gno|fer|dia|1979|-|San Francisco and worldwide|2|L|+just|Starhawk's activist witchcraft tradition.|-
+caw|Church of All Worlds|gno|wic||1962|-|USA|2|L|+land|A neo-pagan church inspired by Heinlein's 'Stranger in a Strange Land'.|-
+# ---------- ESOTERIC ----------
+msm|Mesmerism|gno||her|1775|1900|Europe, USA|3|X|=heal gnos|Franz Anton Mesmer's (1734–1814) 'animal magnetism', a forerunner of Spiritualism and New Thought.|WE!
+mrt|Martinism|gno|ros|fmz,swe|1765|-|France|2|L|+init|Christian esotericism from Martinès de Pasqually and Louis-Claude de Saint-Martin, organized as an order in 1891.|-
+ckb|Christian Kabbalah|gno|kab|roc|1486|1750|Italy, Germany|2|X|+trin|Pico della Mirandola and Reuchlin read Kabbalah as confirming Christianity.|-
+rcf|Rosicrucian Fellowship|gno|tsp|ros|1909|-|USA|3|L|+vegt|Max Heindel's (1865–1919) Christian esoteric school.|FL!
+amc|AMORC|gno|ros||1915|-|USA and worldwide|2|L|+init|The Rosicrucian Order AMORC of H. Spencer Lewis, taught by correspondence.|-
+oto|Ordo Templi Orientis|gno|fmz|tlm|1904|-|Worldwide|2|L|+myst|An initiatory order that adopted Crowley's Thelema in the 1910s.|-
+arc|Arcane School|gno|tsp||1923|-|USA and worldwide|2|L|+medi|Alice Bailey's teachings, attributed to a Master called 'the Tibetan', which shaped the New Age.|-
+iam|'I AM' Activity|gno|tsp|chs|1932|-|USA|3|L|+revl|Guy Ballard's (1878–1939) Ascended Master teachings.|FL!
+cut|Church Universal and Triumphant|gno|iam||1958|-|USA|3|L|+apoc|Mark and Elizabeth Clare Prophet's Summit Lighthouse (1958), whose followers sheltered against nuclear war in Montana in 1990.|FL
+agn|Agni Yoga|gno|tsp||1920|-|Russia, worldwide|2|L||Nicholas and Helena Roerich's 'Living Ethics'.|-
+gur|Fourth Way (Gurdjieff)|gno||suf,eor|1912|-|Russia, France, worldwide|2|L|=gnos medi danc foun|G. I. Gurdjieff's 'work' of self-remembering and sacred dances.|-
+uwb|Universal White Brotherhood|gno|eor|tsp|1897|-|Bulgaria, France|2|L|+danc +vegt|Peter Deunov's esoteric Christianity, with paneurhythmy dance and an August pilgrimage to the Rila Mountains.|-
+unr|Unarius|gno|tsp||1954|-|California|3|L|+apoc|Ernest and Ruth Norman's (1900–1993) teaching of past lives and awaited 'Space Brothers'.|FL
+aet|Aetherius Society|gno|tsp|cls|1954|-|UK and worldwide|3|L|+medi|George King's movement, which received teachings from 'Cosmic Masters' on other planets.|CU!
+hvg|Heaven's Gate|gno|nag|pro|1974|1997|USA|3|X|+apoc +celi|Marshall Applewhite and Bonnie Nettles' UFO movement. It ended with the mass suicide of its members in 1997.|-
+ucg|Universal Christian Gnostic Movement|gno|gdn|tsp|1950|-|Latin America|3|L|+gnos|Samael Aun Weor's (1917–1977) neo-Gnostic teachings.|FL
+are|Association for Research and Enlightenment|gno|spr||1931|-|USA|3|L|+heal|Founded on Edgar Cayce's (1877–1945) trance readings.|FL
+rsc|Religious Science (Centers for Spiritual Living)|gno|nth||1927|-|USA|3|L||Ernest Holmes's (1887–1960) 'Science of Mind'.|FL
+uty|Unity Church|gno|nth|pro|1889|-|USA|3|L|+pray|Charles and Myrtle Fillmore's Christian New Thought.|-
+fth|Faithism|gno|spr||1882|-|USA|2|L|+vegt|John Newbrough's (1828–1891) channeled bible, 'Oahspe'.|FL
+nsh|Neo-shamanism|gno|nag|sib,amz|1980|-|Worldwide|2|L|+sham|Michael Harner's 'core shamanism' and related Western revivals.|-
+tos|Temple of Set|mod|lav||1975|-|USA|3|L|+gnos|Michael Aquino's split from the Church of Satan, which treats Set as a real principle of self-deification.|-
+cmg|Chaos magic|gno|tlm||1978|-|UK and worldwide|2|L|-revl|Pragmatic magic in which belief itself is a tool.|-
+dsc|Discordianism|mod|||1963|-|USA|3|L|=nont foun scri|A parody religion of Eris, goddess of chaos, from the 'Principia Discordia'.|-
+# ---------- MODERN & SECULAR ----------
+cor|Cult of Reason|mod|dei||1793|1794|France|3|X|=nont univ fest|A revolutionary atheistic cult of Reason (Momoro, 1756–1794) in Notre-Dame.|FL!
+csb|Cult of the Supreme Being|mod|dei||1794|1794|France|3|X|=mono soul univ fest|Robespierre's (1758–1794) deist state cult, which lasted months.|FL!
+thp|Theophilanthropy|mod|dei||1796|1801|France|3|X|+cong|Chemin-Dupontès' (1760–1852) deist congregations.|FL
+rhu|Religion of Humanity (Positivism)|mod||dei|1849|-|France, Brazil|3|L|=nont univ just fest tmpl foun|Auguste Comte's (1798–1857) worship of Humanity. Positivist temples survive in Brazil.|FL
+sua|Sunday Assembly|mod|shu||2013|-|UK and worldwide|2|L|+cong +fest|Secular congregations with songs and talks.|-
+kop|Missionary Church of Kopimism|mod|||2010|-|Sweden|2|L|=nont foun univ|Isak Gerson's church, for which copying information is sacred. Sweden recognized it in 2012.|FL

@@ -1,0 +1,92 @@
+# EXPANSION: 13th field = source tag (! = date confirmed there)
+# ---------- CHRISTIAN ----------
+rmt|Remonstrants (Arminianism)|chr|cal||1610|-|Netherlands|3|L|-fate|Followers of Jacobus Arminius (1560–1609), who rejected strict predestination in favor of free will and resisted grace. Arminian theology later shaped Methodism.|FL!
+pts|Pietism|chr|lut||1675|1800|Germany|3|X|+devo|Philipp Spener's movement for heartfelt personal devotion, small Bible-study circles and holy living. It fed Moravian, Methodist and evangelical revivals.|TC!
+cob|Church of the Brethren|chr|ana|pts|1708|-|Germany, then USA|2|L|+meal|Anabaptist-Pietist 'Dunkers' from Schwarzenau who baptize by triple immersion, keep a love feast with foot-washing and witness for peace.|-
+swb|Swiss Brethren|chr|ana||1525|1700|Switzerland|3|X||The first Anabaptist circle around Conrad Grebel (c. 1498–1526) in Zurich, whose adult baptisms of January 1525 began the movement.|FL!
+ame|African Methodist Episcopal Church|chr|met||1816|-|USA, Africa, Caribbean|3|L|+just|Founded by Richard Allen and other Black Methodists in Philadelphia after discrimination in white churches. It is the oldest independent Black denomination in the US.|TC!
+pby|Plymouth Brethren|chr|anc||1828|-|Britain, then worldwide|3|L|-prie -hier -fpry +cong +apoc|Lay-led assemblies without clergy that 'break bread' weekly. J. N. Darby's dispensationalism (a rapture before the end-times) spread widely through them.|TC!
+sbc|Southern Baptist Convention|chr|bap||1845|-|USA|3|L||Formed when Baptists in the South split from northern Baptists over slavery (1845). It later became America's largest Protestant body and apologized for its racist origins in 1995.|TC!
+axc|Anglo-Catholicism (Oxford Movement)|chr|anc|roc|1833|-|Britain and the Anglican Communion|3|L|+icon +sain +monk|The Oxford Movement (1833) revived Catholic liturgy, sacramental theology and religious orders within Anglicanism.|TC!
+naz|Church of the Nazarene|chr|hol||1908|-|USA and worldwide|3|L||A leading Holiness denomination teaching entire sanctification.|TC!
+cgi|Church of God in Christ|chr|pen||1907|-|USA|3|L||The largest African-American Pentecostal church, organized by Charles Harrison Mason after Azusa Street.|TC!
+aog|Assemblies of God|chr|pen||1914|-|USA, Brazil, worldwide|3|L||Founded at Hot Springs, Arkansas, in 1914. Today one of the largest Pentecostal fellowships worldwide.|-
+onp|Oneness Pentecostalism|chr|pen||1913|-|USA, Latin America, Asia|3|L|-trin|Pentecostals who reject the Trinity and baptize 'in Jesus' name only', from the 1913 Arroyo Seco camp meeting onward.|-
+fsq|Foursquare Church|chr|pen||1927|-|USA and worldwide|3|L||Founded by the evangelist Aimee Semple McPherson (1890–1944) at Angelus Temple in Los Angeles.|FL
+ucc|United Church of Canada|chr|met|prs,cng|1925|-|Canada|3|L|-hier +cong|A 1925 union of Methodists, most Presbyterians and Congregationalists. It is Canada's largest Protestant church.|TC!
+uch|United Church of Christ|chr|cng|cal|1957|-|USA|3|L|+just|A 1957 merger of Congregational Christian and Evangelical and Reformed churches. It is theologically liberal.|TC!
+csi|Church of South India|chr|anc|met,prs|1947|-|South India|2|L||A 1947 union of Anglican, Methodist and Reformed churches, joining episcopal and Protestant traditions.|-
+cvc|Calvary Chapel|chr|eva|chm|1965|-|USA and worldwide|2|L|-hier|Chuck Smith's Costa Mesa church that welcomed the 'Jesus People' hippie converts and pioneered contemporary worship.|-
+vin|Vineyard Movement|chr|chm|cvc|1982|-|USA and worldwide|2|L|+heal|John Wimber's 'third wave' charismatic movement of signs and wonders within evangelicalism.|-
+uck|Universal Church of the Kingdom of God|chr|pen||1977|-|Brazil and worldwide|2|L|+tith|Edir Macedo's neo-Pentecostal church, known for prosperity teaching and exorcism.|-
+rcg|Redeemed Christian Church of God|chr|alad|pen|1952|-|Nigeria and worldwide|2|L||Founded by Josiah Akindayomi out of the Cherubim and Seraphim milieu. It became a Pentecostal megachurch network known for its Redemption Camp.|-
+ccc|Celestial Church of Christ|chr|alad||1947|-|Benin, Nigeria, diaspora|2|L|+dres|Samuel Oschoffa's Aladura-type church of visions, healing and white garments, worshipping barefoot.|-
+hrs|Harrist Church|chr|met|aka|1913|-|Côte d'Ivoire|2|L|+heal|The Liberian prophet William Wadé Harris baptized over 100,000 people along the Ivory Coast in 1913–15, and his followers formed an independent church.|-
+shm|Nazareth Baptist Church (Shembe)|chr|bap|zul|1910|-|KwaZulu-Natal, South Africa|2|L|+danc +sabb +revl +foun|Isaiah Shembe's Zulu church, which blends Christianity with Zulu dance, a Saturday Sabbath and pilgrimage to Ekuphakameni.|-
+leg|Legio Maria|chr|roc|bnt|1963|-|Kenya|2|L|+heal +foun|A Luo African Catholic church of exorcism and healing, whose founder Simeo Ondeto is venerated as a black Messiah.|-
+bcs|Brotherhood of the Cross and Star|chr|alad|nco|1956|-|Nigeria and diaspora|2|L|+vegt +revl +foun|Olumba Olumba Obu (1918–2003), proclaimed by followers as the Holy Spirit incarnate, preached love and vegetarianism from Calabar.|FL
+tjc|True Jesus Church|chr|pen||1917|-|China, Taiwan, worldwide|3|L|-trin +sabb|A Chinese independent Pentecostal church (Beijing, 1917) that is Oneness, keeps a Saturday Sabbath and practises foot-washing.|TC!
+lcw|Local churches (Watchman Nee)|chr|pby||1922|-|China, Taiwan, USA|2|L|-hier|Watchman Nee's 'one city, one church' assemblies, later led by Witness Lee.|-
+ifi|Philippine Independent Church (Aglipayan)|chr|roc||1902|-|Philippines|3|L|-celi -hier|A nationalist break from Rome led by Gregorio Aglipay during the Philippine Revolution, now in communion with the Anglicans.|TC!
+mtc|Mar Thoma Syrian Church|chr|oor|anc|1889|-|Kerala, India|2|L||A reformed Saint Thomas Christian church that keeps its Syriac liturgy with Protestant theology.|-
+ero|Eritrean Orthodox Tewahedo Church|chr|eth||1993|-|Eritrea|3|L||Separated from the Ethiopian Church after Eritrean independence (autocephaly 1993–94).|-
+ocl|Old Calendarists|chr|eor||1924|-|Greece, Romania|2|L||Orthodox who rejected the 1924 switch to the Revised Julian calendar.|-
+pnc|Polish National Catholic Church|chr|roc|okc|1897|-|USA, Poland|2|L|-celi -hier|Polish-American parishes that broke from Rome over control of parish property and ethnic leadership.|-
+lcc|Liberal Catholic Church|chr|okc|tsp|1916|-|Worldwide|2|L|+rein +karm|An Old Catholic offshoot led by Theosophists, keeping Catholic sacraments and teaching reincarnation and karma.|-
+chc|The Christian Community|chr|lut|ant|1922|-|Germany and worldwide|2|L||A sacramental movement for religious renewal founded in 1922 by Lutheran ministers led by Friedrich Rittelmeyer, inspired by Rudolf Steiner.|-
+one|Oneida Community|chr|eva||1848|1881|New York, USA|3|X|+monk|John Humphrey Noyes's perfectionist commune, practising shared property and 'complex marriage'.|TC!
+hms|Harmony Society|chr|pts||1805|1905|Pennsylvania and Indiana, USA|2|X|+celi +monk +apoc|George Rapp's celibate, communal Pietists, who awaited Christ's imminent return.|-
+brh|Bruderhof|chr|ana||1920|-|Germany, then USA, UK, Australia|2|L|+monk|Eberhard Arnold's Christian communities, which share all goods in the Anabaptist tradition.|-
+bdv|Branch Davidians|chr|sda||1955|-|Texas, USA|2|L|+mess|An Adventist offshoot from the Davidians (1930s). Its Waco compound under David Koresh ended in a deadly 1993 siege and fire. Small groups continue.|-
+wcg|Worldwide Church of God|chr|sda||1934|2009|USA|2|X|-trin +sabb +fest|Herbert W. Armstrong's Sabbath-keeping, festival-observing church. After his death it embraced mainstream evangelicalism (renamed Grace Communion International, 2009), and splinters kept his teachings.|-
+tbt|Two by Twos|chr|eva||1897|-|Worldwide|2|L|-tmpl -hier|William Irvine's (1863–1947) itinerant 'workers' preach in pairs and meet in homes, with no name or buildings.|FL
+fdv|International Peace Mission (Father Divine)|chr|pen|nth|1919|-|USA|2|L|+inc +just +celi|Father Divine (c. 1876–1965), believed by followers to be God, ran racially integrated communal missions. Few members remain.|FL
+ish|Indian Shaker Church|chr|roc|nwc|1881|-|Pacific Northwest, USA and Canada|2|L|+heal +danc|John Slocum's (1838–1897) Christian–Native healing church of shaking, bells and candles.|FL
+scj|Shincheonji|chr|prs||1984|-|South Korea|2|L|+foun +revl +apoc|Lee Man-hee's church, which claims he is the promised pastor who decodes Revelation.|-
+wms|World Mission Society Church of God|chr|sda||1964|-|South Korea and worldwide|2|L|+sabb +fem +inc|Founded on Ahn Sahng-hong's (1918–1985) teaching. It keeps the Saturday Sabbath and Passover and venerates 'God the Mother'.|FL
+mrn|Maronite Church|chr|nic||685|-|Lebanon and diaspora|2|L||A Syriac Church tracing itself to Saint Maron, with its own patriarch since c. 685. It is in full communion with Rome.|-
+mfd|Mormon fundamentalism|chr|lsc||1904|-|Utah and Arizona|2|L|-hier|Groups that kept plural marriage after the LDS Church ended it (1890, 1904), including the FLDS. They are not recognized by the LDS Church.|-
+mky|Makuya (Original Gospel)|chr|eva|sto|1948|-|Japan|2|L|+danc|Ikurō Teshima's (1910–1973) Japanese, Israel-loving Pentecostal-style movement.|FL
+# ---------- ISLAMIC ----------
+hna|Hanafi school|isl|sun||767|-|South and Central Asia, Turkey|3|L||The law school of Abu Hanifa (d. 767), which gives a large role to reasoned opinion. Today it predominates in South and Central Asia.|MH
+mlk|Maliki school|isl|sun||795|-|North and West Africa|3|L||The law school of Malik ibn Anas (d. 795), grounded in the practice of Medina. It predominates in North and West Africa.|MH
+shf|Shafi'i school|isl|sun||820|-|East Africa, Southeast Asia|3|L||The school of al-Shafi'i (d. 820), who systematized the sources of law. It predominates in East Africa and Southeast Asia.|MH
+hnb|Hanbali school|isl|sun||855|-|Arabia|3|L||The scripture-focused school of Ahmad ibn Hanbal (d. 855). It predominates in central Arabia.|MH
+mtz|Mu'tazila|isl|eis|neop|750|1250|Basra and Baghdad|2|X||Rationalist theology that held the Qur'an was created and that God's justice requires human free will. It was briefly state doctrine under al-Ma'mun.|-
+ash|Ash'ari theology|isl|sun|mtz|935|-|Sunni world|3|L||Al-Ash'ari's (d. 935) answer to the Mu'tazila became the main Sunni theology, holding God's absolute will over all things.|-
+mtd|Maturidi theology|isl|sun||944|-|Central Asia, Turkey, South Asia|3|L||Al-Maturidi's (d. 944) Sunni theology, giving more room to reason. It is paired with the Hanafi school.|-
+qdr|Qadiriyya|isl|suf||1166|-|Worldwide|3|L||Sufi order of Abd al-Qadir al-Jilani (d. 1166) of Baghdad, one of the most widespread orders.|SO!
+nqs|Naqshbandi|isl|suf||1389|-|Central Asia, Turkey, South Asia|3|L||Order of Baha' al-Din Naqshband (d. 1389), known for silent dhikr and a lineage through Abu Bakr.|SO!
+shd|Shadhili|isl|suf||1258|-|North Africa, Egypt|3|L||Order of Abu al-Hasan al-Shadhili (d. 1258), which stresses inward discipline within ordinary working life.|SO!
+shw|Suhrawardiyya|isl|suf||1168|-|Iraq, South Asia|3|L||Order of Abu al-Najib al-Suhrawardi (d. 1168), influential in Mughal-era India.|SO!
+rfi|Rifa'iyya|isl|suf||1182|-|Iraq, Turkey, Balkans|3|L||Order of Ahmad al-Rifa'i (d. 1182), known for ecstatic dhikr.|SO!
+kub|Kubrawiya|isl|suf||1221|-|Central Asia, Iran|3|L||Order of Najm al-Din Kubra (d. 1221), noted for writings on visionary experience.|SO!
+khl|Khalwati|isl|suf||1400|-|Turkey, Balkans, Egypt|2|L|+asce|Order traditionally traced to Umar al-Khalwati (14th–15th c.), known for spiritual retreats (khalwa).|SO!
+tij|Tijaniyya|isl|suf||1782|-|West and North Africa|3|L||Ahmad al-Tijani's (d. 1815) order, the largest in West Africa.|SO
+sen|Senussi|isl|suf|wah|1837|-|Libya|2|L||Muhammad ibn Ali al-Sanusi's (d. 1859) reformist order, which led resistance to Italian rule in Libya.|SO
+mou|Mouride Brotherhood|isl|qdr||1883|-|Senegal and diaspora|2|L|+pilg|Amadou Bamba's Senegalese order, which sanctifies work. The annual Grand Magal pilgrimage to Touba draws millions.|-
+nim|Nimatullahi|isl|suf|twe|1400|-|Iran and the West|2|L||The Shia Sufi order of Shah Nimatullah Wali (d. 1431).|SO
+ina|Inayati (Universal Sufism)|isl|chi|tsp|1910|-|Europe, USA|2|L|+univ +sync|Inayat Khan brought Chishti Sufism to the West, presenting it as a universal path open to all religions.|SO
+qrm|Qarmatians|isl|ism||899|1077|Bahrain, Iraq, Syria|2|X|+apoc|Revolutionary Ismailis of eastern Arabia who seized the Black Stone from Mecca in 930.|-
+hrf|Hurufism|isl|suf|ism|1380|1600|Iran, Anatolia|2|X|+gnos|Fazlallah Astarabadi's (14th c.) mysticism of letters, in which God is revealed in language and the human face. It was absorbed by the Bektashis.|FL!
+nqt|Nuqtawism|isl|hrf||1400|1600|Iran|2|X|+rein|Mahmud Pasikhani's (late 14th c.) offshoot of Hurufism, teaching cyclical ages and transmigration. It was suppressed under Shah Abbas.|FL!
+skh|Shaykhism|isl|twe||1800|-|Iran, Iraq|3|L|+mess +gnos|Shaykh Ahmad al-Ahsa'i's (1753–1826) Twelver school of esoteric philosophy, whose expectation of the Hidden Imam prepared the way for the Báb.|FL!
+azl|Azalism|isl|bab||1863|1950|Iran|3|X||Bábís who followed Subh-i-Azal (1831–1912) rather than Bahá'u'lláh.|FL!
+mhd|Mahdavia|isl|sun||1496|-|India, Pakistan|2|L|+mess|Followers of Syed Muhammad Jaunpuri, who declared himself the Mahdi in 1496.|-
+zkr|Zikri|isl|sun|mhd|1570|-|Balochistan, Pakistan|2|L|-fpry -pilg|A Baloch Mahdist minority that replaces salat with dhikr and the Mecca pilgrimage with Koh-e-Murad. Its link to the Mahdavia is disputed.|-
+lah|Lahore Ahmadiyya|isl|ahm||1914|-|Pakistan and worldwide|3|L|-revl|An Ahmadiyya branch that sees Mirza Ghulam Ahmad as a reformer (mujaddid) rather than a prophet.|-
+fpn|Five-Percent Nation|isl|noi||1964|-|USA|3|L|-inc|Clarence 13X (1922–1969) taught that the Black man is God. It became influential in hip-hop.|FL!
+tbj|Tablighi Jamaat|isl|deo||1926|-|Worldwide|3|L|+miss|Muhammad Ilyas's lay missionary movement, which calls Muslims to deeper practice.|-
+ahd|Ahl-i Hadith|isl|sun|wah|1864|-|South Asia|2|L|-sain|A South Asian Salafi movement that rejects following a single law school in favor of hadith.|-
+qrn|Quranism|isl|sun||1900|-|Worldwide|2|L||Muslims who accept the Qur'an alone and reject hadith as authority.|-
+# ---------- JEWISH ----------
+chb|Chabad-Lubavitch|jud|has||1775|-|Worldwide|3|L|+miss|Schneur Zalman of Liadi's intellectual Hasidism, which in the 20th century became a worldwide outreach movement.|-
+lit|Lithuanian (Misnagdic) Judaism|jud|rab||1772|-|Lithuania, then Israel and USA|2|L||Opponents of Hasidism led by the Vilna Gaon, who stressed rigorous Talmud study in yeshivas.|-
+msr|Musar movement|jud|lit||1848|-|Lithuania|2|L|+virt +medi|Israel Salanter's ethical movement, which cultivated character through introspection and moral study.|-
+mox|Modern Orthodox Judaism|jud|ort||1851|-|Germany, USA, Israel|3|L||Torah observance combined with secular learning (Torah im Derech Eretz). Its founders include Samson Raphael Hirsch and Azriel Hildesheimer (1820–1899).|FL
+hrd|Haredi Judaism|jud|ort|has,lit|1900|-|Israel, USA, Europe|2|L|+dres|Strictly Orthodox communities that resist modern secular culture, encompassing Hasidic and Lithuanian streams.|-
+rzn|Religious Zionism|jud|ort||1902|-|Israel|2|L||Orthodox Zionism (the Mizrachi movement, 1902) sees the return to Israel as part of redemption.|-
+nlg|Neolog Judaism|jud|rab|ref|1869|-|Hungary|2|L|-rlaw|Hungary's moderate reformist stream, formed after the 1868–69 Jewish Congress.|-
+jrn|Jewish Renewal|jud|rec|has|1962|-|USA|2|L|+medi +danc|Zalman Schachter-Shalomi's neo-Hasidic, egalitarian revival of Jewish mysticism and prayer.|-
+jsc|Jewish Science|jud|ref|chs|1916|-|USA|2|L|+heal|Alfred G. Moses's (1878–1956) Jewish answer to Christian Science, centered on spiritual healing.|FL
+pkb|Prophetic (ecstatic) Kabbalah|jud|kab|suf|1270|-|Spain, Sicily, Italy|2|L|+medi|Abraham Abulafia's (1240–1290s) meditative Kabbalah of letter-combination and breath.|FL!

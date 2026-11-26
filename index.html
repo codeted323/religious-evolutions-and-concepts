@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Family Tree of Belief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+/* VOICE: a natural-history museum's evolution hall: scholarly, calm, curious, even-handed.
+   IDEA: a phylogenetic chart, the tree of life applied to religions, with lineages, splits and cross-links.
+   PICTURE: lineage lines on a stretched time axis, coloured by family, with hybrid links shown dashed.
+   COLOUR and TYPE: white ground with 18 family colours as the only colour; Source Serif titles, Source Sans text.
+   LAYOUT: a slim header, then tabs, then the working view filling the screen; details open in a side drawer. */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#121214);--ink:light-dark(#18171b,#ecebe8);--mut:light-dark(#5d5a64,#a9a6b0);--line:light-dark(#e3e1e8,#2c2c33);--soft:light-dark(#f4f3f6,#1b1b21);--acc:light-dark(#c2185b,#ff7aa6);--card:light-dark(#ffffff,#18181d)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Source Sans 3",system-ui,sans-serif;overflow-x:clip}
+h1,h2,h3{font-family:"Source Serif 4",Georgia,serif;line-height:1.1;margin:0;text-wrap:balance}
+h1{font-size:clamp(30px,4.6vw,48px)}h2{font-size:26px}h3{font-size:19px}
+a{color:inherit}
+button,select,input{font:inherit;color:inherit}
+.band{padding:clamp(18px,3vw,36px) max(4vw,14px)}
+header.band{padding-bottom:12px}
+.dek{max-width:68ch;color:var(--mut);margin:10px 0 0;font-size:17px}
+.stats{display:flex;flex-wrap:wrap;gap:6px 22px;margin-top:12px;font-size:15px}
+.stats b{font-size:20px;font-family:"Source Serif 4",serif}
+nav.tabs{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:4px;overflow-x:auto;padding:0 max(4vw,14px)}
+nav.tabs a{flex:none;text-decoration:none;padding:12px 14px;min-height:44px;border-bottom:3px solid transparent;color:var(--mut);font-weight:600}
+nav.tabs a[aria-current=page]{color:var(--ink);border-color:var(--ink)}
+.view{display:none}.view.on{display:block}
+.ctl{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;margin-bottom:10px}
+.ctl label{font-size:14px;color:var(--mut)}
+select,input[type=search]{min-height:44px;font-size:16px;border:1px solid var(--line);background:var(--card);border-radius:8px;padding:6px 10px}
+input[type=search]{width:min(260px,100%)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:none;padding:0 12px;min-height:42px;cursor:pointer;font-size:14px}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.btn{border:1px solid var(--line);background:var(--card);border-radius:8px;padding:0 12px;min-height:40px;cursor:pointer;font-size:14px}
+.btn:hover{border-color:var(--mut)}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:99px;padding:3px 10px 3px 8px;font-size:13px;background:var(--card);cursor:pointer;min-height:30px}
+.chip i{width:10px;height:10px;border-radius:50%;flex:none}
+.chip[aria-pressed=false]{opacity:.38}
+.treebox{position:relative;height:min(74vh,880px);overflow:auto;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+.treebox svg{display:block}
+#axis{position:sticky;top:0;z-index:2;background:var(--card)}
+.tree text{font-size:11.5px;paint-order:stroke;stroke:var(--card);stroke-width:3px;stroke-linejoin:round}
+.tree .row{cursor:pointer}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--mut);margin-top:8px}
+.legend svg{vertical-align:middle;margin-right:4px}
+.pgrid{grid-template-columns:minmax(0,300px) minmax(0,1fr)!important}@media(max-width:860px){.pgrid{grid-template-columns:minmax(0,1fr)!important}.plist{max-height:42vh}}
+.grid2{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:22px;align-items:start}
+@media(max-width:860px){.grid2{grid-template-columns:minmax(0,1fr)}}
+.fig{position:relative}
+.panel{border:1px solid var(--line);border-radius:10px;padding:16px;background:var(--card)}
+.muted{color:var(--mut)}.small{font-size:14px}
+.barrow{display:grid;grid-template-columns:9.5em minmax(0,1fr) 3.2em;gap:8px;align-items:center;font-size:13.5px;margin:3px 0}
+.barrow .bar{height:10px;border-radius:3px;background:var(--soft);overflow:hidden}.barrow .bar span{display:block;height:100%}
+.barrow .v{text-align:right;font-variant-numeric:tabular-nums}
+.list a{cursor:pointer;text-decoration:underline;text-decoration-color:var(--line);text-underline-offset:3px}
+.list a:hover{text-decoration-color:currentColor}
+section.sub{margin-top:34px}section.sub>h2{margin-bottom:6px}
+.trow{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:15px}
+.trow .d{font-variant-numeric:tabular-nums;color:var(--mut);white-space:nowrap}
+.tag{display:inline-block;font-size:12px;border-radius:4px;padding:0 6px;margin-left:6px;background:var(--soft);color:var(--mut)}
+.tag.new{background:color-mix(in oklab,var(--acc) 16%,transparent);color:var(--acc)}
+.cmp{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media(max-width:600px){.cmp{grid-template-columns:minmax(0,1fr)}}
+.cmp h3{font-size:16px;margin-bottom:6px}
+.tchip{display:inline-block;font-size:13px;border:1px solid var(--line);border-radius:6px;padding:1px 7px;margin:0 4px 5px 0;cursor:pointer;background:var(--card)}
+.tchip.g{border-color:var(--acc);color:var(--acc);font-weight:600}
+.matrix{border-collapse:collapse;font-size:12px}
+.matrix th{font-weight:600;padding:3px 5px;white-space:nowrap;text-align:right}
+.matrix thead th{writing-mode:vertical-rl;transform:rotate(180deg);text-align:left;vertical-align:bottom;height:110px}
+.matrix td{width:30px;height:26px;text-align:center;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+.plist{max-height:70vh;overflow:auto;border:1px solid var(--line);border-radius:10px;padding:8px 12px;background:var(--card)}
+.plist h4{margin:12px 0 4px;font-size:13px;color:var(--mut);display:flex;gap:6px;align-items:center}
+.plist button{display:block;width:100%;text-align:left;background:none;border:0;padding:6px 6px;border-radius:6px;cursor:pointer;font-size:15px;min-height:36px}
+.plist button:hover,.plist button[aria-current=true]{background:var(--soft)}
+.plist button .muted{font-size:13px}
+.prof h2{margin-bottom:6px}
+.prof .meta{display:flex;flex-wrap:wrap;gap:4px 14px;font-size:14px;color:var(--mut);margin-bottom:10px}
+.prof .cat{margin:10px 0 2px;font-weight:700;font-size:14px}
+.prof dl{display:grid;grid-template-columns:8.5em minmax(0,1fr);gap:4px 12px;font-size:15px;margin:12px 0}
+.prof dt{color:var(--mut)}.prof dd{margin:0}
+#drawer{position:fixed;inset:0 0 0 auto;width:min(460px,100%);background:var(--card);border-left:1px solid var(--line);z-index:50;overflow:auto;padding:18px 20px 40px;transform:translateX(102%);transition:transform .25s ease;box-shadow:-10px 0 30px rgba(0,0,0,.12)}
+#drawer.open{transform:none}
+#drawer .x{position:sticky;top:0;float:right;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);cursor:pointer;font-size:22px;line-height:1}
+@media(prefers-reduced-motion:reduce){#drawer{transition:none}}
+details.method{margin-top:40px;border-top:1px solid var(--line);padding-top:14px}
+details.method summary{cursor:pointer;font-weight:700;min-height:44px}
+details.method p,details.method li{max-width:75ch}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);font-size:13px;padding:4px 8px;border-radius:6px;z-index:60;display:none;max-width:260px}
+#load{padding:40px;color:var(--mut)}
+.badge{display:inline-block;font-size:12px;font-weight:700;border-radius:4px;padding:1px 7px;white-space:nowrap}
+.b-ok{background:color-mix(in oklab,#18925a 18%,transparent);color:light-dark(#0f6b41,#6fd3a0)}
+.b-fix{background:color-mix(in oklab,#c2185b 16%,transparent);color:var(--acc)}
+.b-disp{background:color-mix(in oklab,#d0661f 18%,transparent);color:light-dark(#9a4710,#f3a76a)}
+.b-part{background:color-mix(in oklab,#2c6fb7 16%,transparent);color:light-dark(#22579a,#8fbaf0)}
+.b-self{background:color-mix(in oklab,#7b4cc0 16%,transparent);color:light-dark(#5b3696,#c3a6f0)}
+.b-unv{background:var(--soft);color:var(--mut)}
+.arow{padding:10px 0;border-bottom:1px solid var(--line)}
+.arow .src a{font-size:13px;margin-right:10px;word-break:break-all}
+#austats .chip[aria-pressed=false]{opacity:1}#austats .chip[aria-pressed=true]{outline:2px solid var(--ink)}
+@media(max-width:600px){.dek{font-size:15px}.stats{gap:2px 12px;font-size:13px}.stats b{font-size:16px}.seg button{padding:0 8px;font-size:13px}.treebox{height:70vh}.ctl{gap:6px}}
+.seg button{white-space:nowrap}.seg{max-width:100%;overflow-x:auto}
+details.fams summary{cursor:pointer;font-size:14px;color:var(--mut);min-height:36px;display:flex;align-items:center}
+@media(max-width:600px){.barrow{grid-template-columns:7.5em minmax(0,1fr) 2.8em}.trow{grid-template-columns:6em minmax(0,1fr)}.prof dl{grid-template-columns:minmax(0,1fr)}.prof dt{margin-top:6px}}
+</style>
+</head>
+<body>
+<header class="band">
+  <h1>The family tree of belief</h1>
+  <p class="dek">How the world's religions descend from one another, split, blend and share beliefs, from Stone Age burials to the newest movements. Tap any tradition to see its beliefs, ancestors and nearest relatives.</p>
+  <div class="stats" id="stats"></div>
+</header>
+<nav class="tabs" aria-label="Views">
+  <a href="#tree" data-v="tree">Family tree</a>
+  <a href="#traits" data-v="traits">Shared traits</a>
+  <a href="#history" data-v="history">Trait histories</a>
+  <a href="#profiles" data-v="profiles">Profiles</a>
+  <a href="#audit" data-v="audit">Audit &amp; sources</a>
+  <a href="wisdom.html" style="margin-left:auto">Shared wisdom →</a>
+</nav>
+<main>
+<div id="load">Loading the traditions…</div>
+
+<section class="view band" id="v-tree" aria-label="Family tree">
+  <div class="ctl">
+    <input type="search" id="tsearch" placeholder="Find a tradition" aria-label="Find a tradition" list="tnames">
+    <div class="seg" id="eras" role="group" aria-label="Time range"></div>
+    <select id="ttrait" aria-label="Highlight a trait"></select>
+    <button class="btn" id="tblend" aria-pressed="false">Show blend links</button>
+    <button class="btn" id="tclear">Clear</button>
+  </div>
+  <details class="fams" id="famdet"><summary>Filter by family</summary><div class="chips" id="famchips" style="margin-bottom:10px"></div></details>
+  <div class="treebox" id="treebox"><svg id="axis"></svg><svg id="tree" class="tree"></svg></div>
+  <div class="legend" id="tlegend"></div>
+</section>
+
+<section class="view band" id="v-traits" aria-label="Shared traits">
+  <div class="grid2">
+    <div>
+      <h2>Map of beliefs and practices</h2>
+      <p class="muted small">Seven broad categories, subdivided into 30 groups and 100 traits. Each bubble's size shows how many traditions have that trait. Tap a bubble or a name in the list below.</p>
+      <div class="fig" id="packfig"><svg id="pack"></svg></div>
+      <div id="tlist" style="margin-top:12px"></div>
+    </div>
+    <div class="panel" id="traitpanel"></div>
+  </div>
+  <section class="sub">
+    <h2>Belief-space map</h2>
+    <p class="muted small">Each dot is a tradition. Traditions that share more traits sit closer together, whatever their ancestry. Where families overlap, religions have converged on similar answers. Tap a dot.</p>
+    <div class="chips" id="mapchips" style="margin:8px 0"></div>
+    <div class="fig" id="mapfig"><svg id="map"></svg></div>
+  </section>
+  <section class="sub">
+    <h2>Compare two traditions</h2>
+    <div class="ctl" style="margin-top:8px"><select id="ca" aria-label="First tradition"></select><span class="muted">and</span><select id="cb" aria-label="Second tradition"></select></div>
+    <div id="cmpout"></div>
+  </section>
+  <section class="sub">
+    <h2>How much families share</h2>
+    <p class="muted small">Average trait overlap between traditions of two families, from 0 (none shared) to 1 (identical). The diagonal shows how alike a family's own members are.</p>
+    <div class="scroll" id="matrix"></div>
+  </section>
+</section>
+
+<section class="view band" id="v-history" aria-label="Trait histories">
+  <div class="ctl"><label for="htrait">Trait</label><select id="htrait"></select><button class="btn" id="hshow">Show on family tree</button></div>
+  <div id="hhead"></div>
+  <div class="fig" id="hfig" style="margin-top:12px"><svg id="hchart"></svg></div>
+  <div class="legend small" id="hlegend"></div>
+  <div class="grid2" style="margin-top:22px">
+    <div><h3>Where it arose or was adopted</h3><p class="muted small">Traditions that have the trait when their parent did not. 'Borrowed' means a tradition that influenced it already had the trait.</p><div id="horig"></div></div>
+    <div><h3>Where it was dropped</h3><p class="muted small">Branches that gave up a trait their parent had.</p><div id="hloss"></div></div>
+  </div>
+</section>
+
+<section class="view band" id="v-profiles" aria-label="Profiles">
+  <div class="grid2 pgrid">
+    <div>
+      <div class="ctl"><input type="search" id="psearch" placeholder="Search names or regions" aria-label="Search traditions">
+      <select id="pstatus" aria-label="Status"><option value="">All</option><option value="L">Living</option><option value="X">Historical</option><option value="R">Modern revivals</option></select></div>
+      <div class="plist" id="plist"></div>
+    </div>
+    <div class="panel prof" id="pcard"></div>
+  </div>
+</section>
+
+<section class="view band" id="v-audit" aria-label="Audit and sources">
+  <h2>Fact-check audit</h2>
+  <p class="dek" style="margin-top:6px">Entries were compared with reference sources, chiefly Britannica and Wikipedia's cited survey, timeline and list articles, which summarize academic consensus, plus Pew for population figures. Where scholars disagree, both views are given. Where scholarship is silent or differs, the tradition's own account is used and labeled. Corrections were applied to the data. <span id="aucount"></span></p>
+  <div id="austats" class="chips" style="margin:14px 0"></div>
+  <div class="ctl"><input type="search" id="asearch" placeholder="Search entries or notes" aria-label="Search audit"><select id="afam" aria-label="Family"></select></div>
+  <div id="alist"></div>
+</section>
+
+<div class="band">
+<details class="method">
+  <summary>How this was built, and its limits</summary>
+  <p>Each tradition is coded for 100 traits, grouped into 7 categories and 30 subgroups. The coding describes its mainstream or normative form; real communities vary widely, and one entry cannot capture every voice inside a faith. Each tradition descends from one main ancestor (solid lines) and can draw on others (dashed blend links). Like a species, a tradition inherits its parent's traits unless it gains or drops them. 'Gained here' marks where a trait enters a lineage.</p>
+  <ul>
+    <li><b>Dates</b> mark when a tradition became recognizably distinct, not every claimed origin. Many are approximate. Confidence (high, medium, low) reflects how secure the dating and ancestry are. Prehistoric and reconstructed nodes (such as Proto-Indo-European religion) are scholarly inferences.</li>
+    <li><b>Academic, not devotional, history.</b> Origins follow mainstream scholarship. Many traditions understand their own beginnings differently. For example, many Hindus see their dharma as eternal, and many Jews, Christians and Muslims date their faith to earlier revelation.</li>
+    <li><b>Similarity</b> is the Jaccard index: shared traits divided by all traits either has. The belief-space map arranges traditions by multidimensional scaling of these scores.</li>
+    <li><b>Simplification.</b> The tree model is a tool, not a verdict. Religions blend far more than species, so read the blend links as part of the picture.</li>
+    <li><b>Fact-check audit (November 2026).</b> Entries were compared with reference sources: Britannica and Wikipedia's cited survey, timeline and list articles, which summarize academic consensus. Statuses: Confirmed, Corrected (the data was changed), Scholars disagree (both views given), Partly confirmed, Tradition's own account (used where scholarship is silent or differs), and Not yet checked. See the Audit &amp; sources view.</li>
+    <li><b>Second pass (November 2026).</b> Every entry that was still 'Not yet checked' was checked, starting with the ancient and Indigenous traditions; the corrections were applied to dates, descriptions and traits. Profiles now list key texts and key figures (deities, founders, teachers) for about 600 traditions. These come from the checked sources and standard references. Many Indigenous traditions are oral, so for them the 'texts' are later recordings, or the field is left empty.</li>
+    <li><b>Expansion.</b> The tree grew from 348 to 670 traditions, adding denominations, law schools, Sufi orders, sampradāyas, Buddhist schools, East Asian new religions, Indigenous traditions and esoteric and secular movements. New entries cite the list they were drawn from where one confirmed them.</li>
+    <li>Adherent figures: Pew Research Center, 'How the Global Religious Landscape Changed From 2010 to 2020' (June 2025).</li>
+  </ul>
+</details>
+</div>
+</main>
+<datalist id="tnames"></datalist>
+<aside id="drawer" aria-label="Tradition profile" aria-hidden="true"><button class="x" id="dclose" aria-label="Close">×</button><div class="prof" id="dbody"></div></aside>
+<div id="tip"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script>
+{
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const FCOL={pre:'#8c857b',ane:'#b08a4a',eur:'#4f92dc',ir:'#c0472f',jud:'#2c55c0',chr:'#7b4cc0',isl:'#18925a',gno:'#b04f8c',hin:'#f08c1e',ind:'#c9a400',bud:'#8f2633',eas:'#e2557c',nea:'#2a8f9e',afr:'#77892a',afd:'#c873d6',amr:'#8a5a2b',oce:'#3fb9a0',mod:'#5d6b7a',sas:'#4d7c0f'};
+const FSHORT={pre:'Prehistoric',ane:'Near East',eur:'Europe',ir:'Iranian',jud:'Jewish',chr:'Christian',isl:'Islamic',gno:'Gnostic/esoteric',hin:'Hindu',ind:'Jain/Sikh/Indic',bud:'Buddhist',eas:'East Asian',nea:'N. & C. Asian',afr:'African',afd:'Afro-Atlantic',amr:'Americas',oce:'Oceania',mod:'Modern/secular',sas:'S/SE Asian Indigenous'};
+const CCOL={DIV:'#6d4bc0',COS:'#2c6fb7',AFT:'#55576b',ETH:'#1f8a5b',RIT:'#d0661f',LAW:'#b0384a',AUT:'#9a7a12'};
+const NOW=2026, RH=17, LPAD=8;
+const ERAS={all:{n:'All time',b:[-100000,-10000,-3000,0,1000,1500,2030],w:[.07,.1,.23,.17,.12,.31],t:[-100000,-50000,-10000,-5000,-3000,-2000,-1000,0,500,1000,1500,1750,1900,2000]},
+ anc:{n:'10,000 BCE–500 CE',b:[-10000,-3000,-1000,0,500],w:[.2,.33,.27,.2],t:[-10000,-7000,-5000,-3000,-2000,-1500,-1000,-500,0,250,500]},
+ his:{n:'3000 BCE–now',b:[-3000,-1000,0,1000,1500,2030],w:[.2,.2,.2,.12,.28],t:[-3000,-2000,-1000,-500,0,500,1000,1500,1750,1900,2000]},
+ mod:{n:'Since 1500',b:[1500,1800,1900,2030],w:[.4,.25,.35],t:[1500,1600,1700,1800,1850,1900,1950,2000]}};
+let D,T={},TR={},FAM={},KIDS={},INFOUT={},ORDER=[],dark=false;
+const st={era:'all',fams:new Set(),trait:'',sel:'',blend:false,ptab:'',htrait:'mono',ptrait:'mono',mapsel:'',mapfams:new Set()};
+
+const isDark=()=>{const a=document.documentElement.dataset.theme;return a?a==='dark':matchMedia('(prefers-color-scheme: dark)').matches};
+const mix=(h,p)=>{const n=parseInt(h.slice(1),16),r=n>>16,g=n>>8&255,b=n&255,f=c=>Math.round(c+(255-c)*p);return `rgb(${f(r)},${f(g)},${f(b)})`};
+const fc=f=>dark?mix(FCOL[f],.22):FCOL[f];
+const fy=(y,c)=>{if(y==null)return 'present';const a=Math.abs(y);const s=a>=10000?Math.round(a/1000).toLocaleString()+',000':String(a);return (c&&c<3||y<-3000?'c. ':'')+s+(y<0?' BCE':' CE')};
+const span=t=>`${fy(t.s,t.c)} – ${t.e==null?'present':fy(t.e,t.c)}`;
+const STATUS={L:'Living',X:'Historical',R:'Modern revival'}, CONF={1:'low',2:'medium',3:'high'};
+const tl=id=>`<a data-id="${esc(id)}">${esc(T[id].n)}</a>`;
+
+function scale(era,x0,x1){const E=ERAS[era],tot=E.w.reduce((a,b)=>a+b,0),acc=[x0];E.w.forEach(w=>acc.push(acc[acc.length-1]+w/tot*(x1-x0)));
+ const b=E.b,f=y=>{if(y<=b[0])return x0;if(y>=b[b.length-1])return x1;let i=0;while(y>b[i+1])i++;return acc[i]+(y-b[i])/(b[i+1]-b[i])*(acc[i+1]-acc[i])};
+ f.inv=x=>{if(x<=x0)return b[0];if(x>=x1)return b[b.length-1];let i=0;while(x>acc[i+1])i++;return b[i]+(x-acc[i])/(acc[i+1]-acc[i])*(b[i+1]-b[i])};
+ f.lo=b[0];f.hi=b[b.length-1];f.acc=acc;return f}
+
+fetch('data.json').then(r=>r.json()).then(init).catch(()=>{$('#load').textContent='Sorry, the data could not be loaded. Try reloading the page.'});
+
+function init(d){
+ D=d;d.trads.forEach(t=>{T[t.id]=t;KIDS[t.id]=[];INFOUT[t.id]=[]});d.families.forEach(f=>FAM[f.id]=f);TR=d.traits;
+ d.trads.forEach(t=>{if(t.p)KIDS[t.p].push(t.id);t.x.forEach(x=>INFOUT[x].push(t.id))});
+ Object.values(KIDS).forEach(k=>k.sort((a,b)=>T[a].s-T[b].s));
+ // row order: family blocks, depth-first within family
+ const seen=new Set();
+ d.families.forEach(f=>{const roots=d.trads.filter(t=>t.f===f.id&&(!t.p||T[t.p].f!==f.id)).sort((a,b)=>a.s-b.s);
+  const walk=id=>{if(seen.has(id))return;seen.add(id);ORDER.push(id);KIDS[id].filter(k=>T[k].f===f.id).forEach(walk)};roots.forEach(r=>walk(r.id))});
+ d.trads.forEach(t=>{if(!seen.has(t.id))ORDER.push(t.id)});
+ const living=d.trads.filter(t=>t.st!=='X').length;
+ $('#stats').innerHTML=`<span><b>${d.trads.length}</b> traditions</span><span><b>${living}</b> still practised</span><span><b>100</b> traits in 7 categories</span><span><b>${d.families.length}</b> families</span><span><b>${d.trads.filter(t=>t.src.length).length}</b> source-checked</span><span><b>100,000</b> years</span>`;
+ $('#tnames').innerHTML=d.trads.map(t=>`<option value="${esc(t.n)}">`).join('');
+ // trait selects
+ const topt=d.cats.map(c=>`<optgroup label="${esc(c.name)}">${c.subs.flatMap(s=>s.traits).map(k=>`<option value="${k}">${esc(TR[k].name)}</option>`).join('')}</optgroup>`).join('');
+ $('#ttrait').innerHTML='<option value="">Highlight a trait…</option>'+topt;$('#htrait').innerHTML=topt;
+ const sorted=[...d.trads].sort((a,b)=>a.n.localeCompare(b.n));
+ const opts=sorted.map(t=>`<option value="${t.id}">${esc(t.n)}</option>`).join('');$('#ca').innerHTML=opts;$('#cb').innerHTML=opts;$('#ca').value='sik';$('#cb').value='sun';
+ $('#eras').innerHTML=Object.entries(ERAS).map(([k,e])=>`<button data-era="${k}" aria-pressed="${k===st.era}">${esc(e.n)}</button>`).join('');
+ const fchips=d.families.map(f=>`<button class="chip" data-f="${f.id}" aria-pressed="true"><i style="background:${FCOL[f.id]}"></i>${esc(FSHORT[f.id])}</button>`).join('');
+ $('#famchips').innerHTML=fchips;$('#mapchips').innerHTML=fchips;
+ $('#tlegend').innerHTML=`<span><svg width="34" height="10"><line x1="2" y1="5" x2="32" y2="5" stroke="currentColor" stroke-width="3"/></svg>lineage</span><span><svg width="34" height="10"><line x1="2" y1="5" x2="26" y2="5" stroke="currentColor" stroke-width="3"/><path d="M26 1l6 4-6 4z" fill="currentColor"/></svg>still practised</span><span><svg width="34" height="10"><line x1="2" y1="5" x2="32" y2="5" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3"/></svg>gap in the record or blend link</span><span><svg width="14" height="12"><path d="M7 1l5 5-5 5-5-5z" fill="currentColor"/></svg>trait gained here</span><span><svg width="14" height="12"><path d="M7 1l5 5-5 5-5-5z" fill="none" stroke="currentColor"/></svg>trait dropped here</span><span>The time axis is stretched: older eras are compressed.</span>`;
+ $('#load').remove();if(innerWidth>700)$('#famdet').open=true;
+ bind();dark=isDark();route();
+ new MutationObserver(()=>{dark=isDark();redraw()}).observe(document.documentElement,{attributes:true,attributeFilter:['data-theme']});
+ matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{dark=isDark();redraw()});
+}
+
+function bind(){
+ addEventListener('hashchange',route);
+ $('#eras').addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;st.era=b.dataset.era;$$('#eras button').forEach(x=>x.setAttribute('aria-pressed',x===b));drawTree()});
+ const famToggle=(box,set,after)=>$(box).addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;const f=b.dataset.f;
+  if(set.size===0){D.families.forEach(x=>{if(x.id!==f)set.add(x.id)})}else if(set.has(f))set.delete(f);else set.add(f);
+  if(set.size===D.families.length)set.clear();$$(box+' .chip').forEach(c=>c.setAttribute('aria-pressed',!set.has(c.dataset.f)));after()});
+ famToggle('#famchips',st.fams,drawTree);famToggle('#mapchips',st.mapfams,drawMap);
+ $('#ttrait').addEventListener('change',e=>{st.trait=e.target.value;drawTree()});
+ $('#tblend').addEventListener('click',e=>{st.blend=!st.blend;e.target.setAttribute('aria-pressed',st.blend);e.target.textContent=st.blend?'Hide blend links':'Show blend links';drawTree()});
+ $('#tclear').addEventListener('click',()=>{st.trait='';st.sel='';$('#ttrait').value='';$('#tsearch').value='';drawTree()});
+ $('#tsearch').addEventListener('change',e=>{const q=e.target.value.trim().toLowerCase();const t=D.trads.find(t=>t.n.toLowerCase()===q)||D.trads.find(t=>t.n.toLowerCase().includes(q));if(t)focusTree(t.id)});
+ $('#htrait').addEventListener('change',e=>{st.htrait=e.target.value;drawHistory()});
+ $('#hshow').addEventListener('click',()=>{st.trait=st.htrait;$('#ttrait').value=st.trait;location.hash='tree'});
+ $('#ca').addEventListener('change',drawCompare);$('#cb').addEventListener('change',drawCompare);
+ $('#psearch').addEventListener('input',drawPList);$('#pstatus').addEventListener('change',drawPList);
+ $('#dclose').addEventListener('click',closeDrawer);addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer()});
+ document.body.addEventListener('click',e=>{const a=e.target.closest('a[data-id]');if(a){e.preventDefault();openTrad(a.dataset.id)}
+  const tc=e.target.closest('[data-trait]');if(tc){e.preventDefault();st.htrait=tc.dataset.trait;closeDrawer();location.hash='history';drawHistory()}
+  const sh=e.target.closest('[data-showtree]');if(sh){closeDrawer();location.hash='tree';setTimeout(()=>focusTree(sh.dataset.showtree),60)}});
+ let lastW=0;const ro=new ResizeObserver(es=>{const w=Math.round(es[0].contentRect.width);if(w!==lastW){lastW=w;redraw()}});ro.observe($('main'));
+}
+function route(){let v=location.hash.slice(1);if(!['tree','traits','history','profiles','audit'].includes(v))v='tree';
+ $$('.view').forEach(s=>s.classList.toggle('on',s.id==='v-'+v));$$('nav.tabs a').forEach(a=>a.setAttribute('aria-current',a.dataset.v===v?'page':'false'));st.view=v;redraw()}
+function redraw(){if(!D)return;const v=st.view;if(v==='tree')drawTree();if(v==='traits'){drawPack();drawTList();drawTraitPanel();drawMap();drawCompare();drawMatrix()}if(v==='history')drawHistory();if(v==='profiles'){drawPList();drawPCard()}if(v==='audit')drawAudit()}
+function openTrad(id){if(st.view==='profiles'){st.ptab=id;drawPList();drawPCard();$('#pcard').scrollIntoView({block:'start'});return}
+ $('#dbody').innerHTML=profile(id,true);const d=$('#drawer');d.classList.add('open');d.setAttribute('aria-hidden','false');d.scrollTop=0;$('#dclose').focus();
+ if(st.view==='tree'){st.sel=id;drawTree()}}
+function closeDrawer(){const d=$('#drawer');if(!d.classList.contains('open'))return;d.classList.remove('open');d.setAttribute('aria-hidden','true')}
+
+/* ---------- FAMILY TREE ---------- */
+function lineage(id){const s=new Set([id]);let p=T[id].p;while(p){s.add(p);p=T[p].p}const down=k=>KIDS[k].forEach(c=>{s.add(c);down(c)});down(id);return s}
+function drawTree(){
+ const box=$('#treebox'),W=Math.max(box.clientWidth-2,820),sc=scale(st.era,LPAD,W-14);
+ const vis=ORDER.filter(id=>{const t=T[id];if(st.fams.has(t.f))return false;const e=t.e==null?NOW:t.e;return e>=sc.lo&&t.s<=sc.hi});
+ const Y={};vis.forEach((id,i)=>Y[id]=i*RH+6);const H=vis.length*RH+14;
+ const hl=st.sel?lineage(st.sel):null,tr=st.trait;
+ // axis
+ const E=ERAS[st.era];let last=-99,tk='';
+ E.t.forEach(y=>{const x=sc(y),lab=y===0?'1 CE':fy(y).replace('c. ',''),lw=lab.length*6.2,an=x<30?'start':x>W-40?'end':'middle',l0=an==='start'?x:an==='end'?x-lw:x-lw/2;if(l0<last+10)return;last=l0+lw;tk+=`<line x1="${x}" y1="22" x2="${x}" y2="30" stroke="currentColor" opacity=".5"/><text x="${x}" y="16" text-anchor="${an}" font-size="11" fill="currentColor">${esc(lab)}</text>`});
+ sc.acc.slice(1,-1).forEach(x=>tk+=`<line x1="${x}" y1="0" x2="${x}" y2="30" stroke="var(--acc)" stroke-dasharray="2 3" opacity=".6"/>`);
+ const ax=$('#axis');ax.setAttribute('width',W);ax.setAttribute('height',32);ax.style.color='var(--mut)';ax.innerHTML=tk+`<line x1="0" y1="31.5" x2="${W}" y2="31.5" stroke="var(--line)"/>`;
+ let grid='';sc.acc.slice(1,-1).forEach(x=>grid+=`<line x1="${x}" y1="0" x2="${x}" y2="${H}" stroke="var(--line)" stroke-dasharray="2 4"/>`);
+ let con='',bl='',rows='';
+ const dim=t=>hl?!hl.has(t.id):(tr&&!t.t.includes(tr));
+ const col=t=>dim(t)?'var(--line)':fc(t.f);
+ vis.forEach(id=>{const t=T[id],y=Y[id]+RH-3,xs=sc(Math.max(t.s,sc.lo));
+  if(t.p&&Y[t.p]!=null){const p=T[t.p],pe=p.e==null?NOW:p.e,xp=sc(Math.min(Math.max(t.s,p.s),pe)),yp=Y[t.p]+RH-3,gap=t.s>pe+50;
+   con+=`<path d="M${xp},${yp}L${xp},${y}${gap?'':''}L${xs},${y}" fill="none" stroke="${col(t)}" stroke-width="${p.f===t.f?1.2:.8}" opacity="${p.f!==t.f&&!(hl&&hl.has(t.id))?.22:dim(t)?.5:.55}" ${gap?'stroke-dasharray="3 3"':''}/>`}
+  if(st.blend||st.sel===id)t.x.forEach(x=>{if(Y[x]==null)return;const s=T[x],se=s.e==null?NOW:s.e,xi=sc(Math.min(Math.max(t.s,s.s),se)),yi=Y[x]+RH-3;
+   bl+=`<path d="M${xi},${yi}C${xi+30},${yi} ${xs-30},${y} ${xs},${y}" fill="none" stroke="${st.sel===id?'var(--acc)':fc(s.f)}" stroke-width="${st.sel===id?1.6:1}" stroke-dasharray="4 3" opacity="${st.sel===id?.9:.45}"/>`})});
+ if(st.sel&&Y[st.sel]!=null)INFOUT[st.sel].forEach(c=>{if(Y[c]==null)return;const s=T[st.sel],ct=T[c],se=s.e==null?NOW:s.e,xi=sc(Math.min(Math.max(ct.s,s.s),se)),yi=Y[st.sel]+RH-3,xs=sc(ct.s),y=Y[c]+RH-3;
+   bl+=`<path d="M${xi},${yi}C${xi+30},${yi} ${xs-30},${y} ${xs},${y}" fill="none" stroke="var(--acc)" stroke-width="1.4" stroke-dasharray="4 3" opacity=".7"/>`});
+ vis.forEach(id=>{const t=T[id],y0=Y[id],y=y0+RH-3,clip=t.s<sc.lo,xs=sc(Math.max(t.s,sc.lo)),xe=sc(t.e==null?NOW:t.e),c=col(t),d=dim(t);
+  const tw=t.n.length*6.1,left=xs+6+tw>W-6;const tx=left?xs-5:xs+5;
+  let mk='';if(tr&&t.g.includes(tr))mk=`<path d="M${xs},${y-5}l5,5-5,5-5-5z" fill="${fc(t.f)}" stroke="var(--card)"/>`;
+  if(tr&&t.l.includes(tr))mk=`<path d="M${xs},${y-5}l5,5-5,5-5-5z" fill="var(--card)" stroke="${fc(t.f)}" stroke-width="1.5"/>`;
+  const end=t.e==null?`<path d="M${xe-6},${y-3.5}l6,3.5-6,3.5z" fill="${c}"/>`:`<line x1="${xe}" y1="${y-3}" x2="${xe}" y2="${y+3}" stroke="${c}" stroke-width="1.5"/>`;
+  const hx0=Math.max(0,Math.min(xs,left?tx-tw:xs)-10),hx1=Math.min(W,Math.max(xe,left?xs:tx+tw)+10);
+  rows+=`<g class="row" data-id="${id}"><rect x="${hx0}" y="${y0}" width="${hx1-hx0}" height="${RH}" fill="transparent"/><title>${esc(t.n)}: ${esc(span(t))}</title>`+
+   `<line x1="${xs}" y1="${y}" x2="${Math.max(xe-(t.e==null?5:0),xs+2)}" y2="${y}" stroke="${c}" stroke-width="${st.sel===id?4.5:3}" stroke-linecap="round" ${!d&&tr&&!t.t.includes(tr)?'opacity=".35"':t.c===1&&!d?'opacity=".75"':''}/>${end}`+
+   (clip?`<text x="${xs+1}" y="${y+4}" font-size="10" fill="${c}">◂</text>`:'')+
+   `<text x="${tx}" y="${y-4}" text-anchor="${left?'end':'start'}" fill="${d?'var(--mut)':'var(--ink)'}" ${d?'opacity=".55"':''} font-weight="${st.sel===id||(tr&&t.g.includes(tr))?700:400}">${esc(t.n)}</text>${mk}</g>`});
+ const svg=$('#tree');svg.setAttribute('width',W);svg.setAttribute('height',H);svg.innerHTML=grid+con+bl+rows;
+ svg.onclick=e=>{const g=e.target.closest('.row');if(g)openTrad(g.dataset.id)};
+ $('#treebox').onclick=e=>{if(!e.target.closest('.row')&&(st.sel||st.trait))$('#tclear').click()};
+ $('#treebox')._Y=Y;$('#treebox')._sc=sc;
+}
+function focusTree(id){st.sel=id;if(st.fams.has(T[id].f)){st.fams.clear();$$('#famchips .chip').forEach(c=>c.setAttribute('aria-pressed','true'))}
+ const t=T[id],E=ERAS[st.era],e=t.e==null?NOW:t.e;if(e<E.b[0]||t.s>E.b[E.b.length-1]){st.era='all';$$('#eras button').forEach(x=>x.setAttribute('aria-pressed',x.dataset.era==='all'))}
+ drawTree();const box=$('#treebox'),y=box._Y[id];if(y!=null){box.scrollTo({top:Math.max(0,y-box.clientHeight/3),left:Math.max(0,box._sc(t.s)-120),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}
+ openTrad(id)}
+
+/* ---------- PROFILE ---------- */
+function profile(id,drawer){const t=T[id];if(!t)return '';
+ const kids=KIDS[id],io=INFOUT[id],par=t.p?tl(t.p):'<span class="muted">None recorded (a root of the tree)</span>';
+ let traits='';D.cats.forEach(c=>{const ks=c.subs.flatMap(s=>s.traits).filter(k=>t.t.includes(k));if(!ks.length)return;
+  traits+=`<div class="cat" style="color:${dark?mix(CCOL[c.id],.3):CCOL[c.id]}">${esc(c.name)}</div><div>`+ks.map(k=>`<span class="tchip${t.g.includes(k)?' g':''}" data-trait="${k}" title="${esc(TR[k].desc)}">${esc(TR[k].name)}${t.g.includes(k)?' ✦':''}</span>`).join('')+'</div>'});
+ const sim=(arr)=>arr.map(([k,v])=>`<div class="barrow"><span class="list">${tl(k)}</span><span class="bar"><span style="width:${v*100}%;background:${fc(T[k].f)}"></span></span><span class="v">${Math.round(v*100)}%</span></div>`).join('');
+ return `<h2>${esc(t.n)}</h2><div class="meta"><span class="chip" style="cursor:default"><i style="background:${fc(t.f)}"></i>${esc(FAM[t.f].name)}</span><span>${STATUS[t.st]}</span><span>${esc(span(t))}</span></div>
+ <p>${esc(t.d)}</p>${FAM[t.f].note&&t.st!=='X'&&(!t.p||T[t.p].f!==t.f||['roc','sun','cls','mah','rab'].includes(id))?`<p class="muted small">${esc(FAM[t.f].note)}</p>`:''}
+ <dl><dt>Region</dt><dd>${esc(t.r)}</dd><dt>Dating confidence</dt><dd>${CONF[t.c]}</dd><dt>Descends from</dt><dd class="list">${par}</dd>
+ ${t.x.length?`<dt>Also drew on</dt><dd class="list">${t.x.map(tl).join(', ')}</dd>`:''}${kids.length?`<dt>Branches</dt><dd class="list">${kids.map(tl).join(', ')}</dd>`:''}${io.length?`<dt>Influenced</dt><dd class="list">${io.map(tl).join(', ')}</dd>`:''}${t.kt&&t.kt.length?`<dt>Key texts</dt><dd>${t.kt.map(esc).join(' · ')}</dd>`:''}${t.kf&&t.kf.length?`<dt>Key figures</dt><dd>${t.kf.map(esc).join(' · ')}</dd>`:''}</dl>
+ <div class="panel" style="padding:10px 12px;margin:0 0 12px"><div class="small"><b>Fact-check:</b> ${badge(t.au)}</div><div class="small" style="margin-top:4px">${esc(t.an)}</div>${t.src.length?`<div class="src small" style="margin-top:4px">${srcl(t)}</div>`:''}</div>
+ <button class="btn" data-showtree="${id}">Show on family tree</button>
+ <h3 style="margin-top:18px">Beliefs and practices (${t.t.length})</h3><p class="muted small">✦ marks traits gained at this branch; the rest are inherited from its ancestor. Tap a trait for its history.</p>${traits}
+ ${t.l.length?`<p class="small" style="margin-top:10px"><b>Dropped from its parent:</b> ${t.l.map(k=>`<span class="tchip" data-trait="${k}">${esc(TR[k].name)}</span>`).join('')}</p>`:''}
+ <h3 style="margin-top:18px">Closest by shared traits</h3>${sim(t.sim.slice(0,5))}
+ <h3 style="margin-top:14px">Closest outside its family</h3><p class="muted small">Similar answers reached in other lineages, whether by contact or independently.</p>${sim(t.so)}`}
+
+/* ---------- PROFILES TAB ---------- */
+function drawPList(){const q=$('#psearch').value.trim().toLowerCase(),s=$('#pstatus').value;
+ const m=t=>(!s||t.st===s)&&(!q||t.n.toLowerCase().includes(q)||t.r.toLowerCase().includes(q));
+ if(!st.ptab)st.ptab='zor';
+ $('#plist').innerHTML=D.families.map(f=>{const ts=ORDER.map(i=>T[i]).filter(t=>t.f===f.id&&m(t));if(!ts.length)return '';
+  return `<h4><i style="width:10px;height:10px;border-radius:50%;background:${fc(f.id)}"></i>${esc(f.name)} (${ts.length})</h4>`+ts.map(t=>`<button data-pid="${t.id}" aria-current="${t.id===st.ptab}">${esc(t.n)} <span class="muted">${esc(fy(t.s,t.c))}</span></button>`).join('')}).join('')||'<p class="muted">No matches.</p>';
+ $('#plist').onclick=e=>{const b=e.target.closest('[data-pid]');if(!b)return;st.ptab=b.dataset.pid;$$('#plist button').forEach(x=>x.setAttribute('aria-current',x===b));drawPCard();if(innerWidth<860)$('#pcard').scrollIntoView({block:'start'})}}
+function drawPCard(){$('#pcard').innerHTML=profile(st.ptab)}
+
+/* ---------- TRAIT BUBBLE MAP ---------- */
+function count(k){return D.trads.filter(t=>t.t.includes(k)).length}
+function drawPack(){if(!window.d3){$('#packfig').innerHTML='<p class="muted">The bubble map needs a library that did not load. The trait list beside it still works.</p>';return}
+ const fig=$('#packfig'),S=Math.min(fig.clientWidth,680),svg=$('#pack');svg.setAttribute('width',S);svg.setAttribute('height',S);svg.setAttribute('viewBox',`0 0 ${S} ${S}`);
+ const root=d3.hierarchy({children:D.cats.map(c=>({id:c.id,name:c.name,children:c.subs.map(s=>({name:s.name,cat:c.id,children:s.traits.map(k=>({k,cat:c.id,value:Math.max(count(k),3)}))}))}))}).sum(d=>d.value||0).sort((a,b)=>b.value-a.value);
+ d3.pack().size([S,S]).padding(d=>d.depth===0?6:d.depth===1?5:2)(root);
+ let h='';root.descendants().forEach(n=>{if(n.depth===0)return;const cid=n.data.cat||n.data.id,c=dark?mix(CCOL[cid],.25):CCOL[cid];
+  if(n.depth===1)h+=`<circle cx="${n.x}" cy="${n.y}" r="${n.r}" fill="${c}" fill-opacity=".07" stroke="${c}" stroke-opacity=".5"/>`;
+  if(n.depth===2)h+=`<circle cx="${n.x}" cy="${n.y}" r="${n.r}" fill="${c}" fill-opacity=".06" stroke="${c}" stroke-opacity=".25"/>`;
+  if(n.depth===3){const on=n.data.k===st.ptrait;h+=`<g data-k="${n.data.k}" style="cursor:pointer"><circle cx="${n.x}" cy="${n.y}" r="${n.r}" fill="${c}" fill-opacity="${on?1:.72}" stroke="${on?'var(--ink)':'var(--card)'}" stroke-width="${on?2.5:1}"/><title>${esc(TR[n.data.k].name)}: ${count(n.data.k)} traditions</title>`+
+   (n.r>26?`<text x="${n.x}" y="${n.y+3.5}" text-anchor="middle" font-size="10.5" fill="#fff" pointer-events="none">${esc(short(TR[n.data.k].name,n.r))}</text>`:'')+'</g>'}});
+ root.children.forEach(n=>{const c=dark?mix(CCOL[n.data.id],.3):CCOL[n.data.id];const ly=n.y-n.r+13;h+=`<text x="${n.x}" y="${ly}" text-anchor="middle" font-size="12.5" font-weight="700" fill="${c}" style="paint-order:stroke;stroke:var(--card);stroke-width:4px">${esc(n.data.name)}</text>`});
+ fig.onclick=e=>{if(!e.target.closest('[data-k]')&&st.ptrait){st.ptrait='';drawPack();drawTList();drawTraitPanel()}};
+ svg.innerHTML=h;svg.onclick=e=>{const g=e.target.closest('[data-k]');if(!g)return;st.ptrait=g.dataset.k;drawPack();drawTList();drawTraitPanel();if(innerWidth<860)$('#traitpanel').scrollIntoView({block:'nearest'})}}
+function short(n,r){const max=Math.floor(r/2.9);return n.length<=max?n:n.slice(0,max-1)+'…'}
+function drawTList(){$('#tlist').innerHTML=D.cats.map(c=>`<div class="small" style="color:${dark?mix(CCOL[c.id],.3):CCOL[c.id]};font-weight:700;margin-top:8px">${esc(c.name)}</div>`+c.subs.map(s=>`<span class="small muted">${esc(s.name)}:</span> `+s.traits.map(k=>`<span class="tchip${k===st.ptrait?' g':''}" data-pk="${k}">${esc(TR[k].name)} <span class="muted">${count(k)}</span></span>`).join('')).join('<br>')).join('');
+ $('#tlist').onclick=e=>{const c=e.target.closest('[data-pk]');if(!c)return;st.ptrait=c.dataset.pk;drawPack();drawTList();drawTraitPanel();$('#traitpanel').scrollIntoView({block:'nearest'})}}
+function drawTraitPanel(){if(!st.ptrait||!TR[st.ptrait]){$('#traitpanel').innerHTML='<p class="muted">Tap a bubble, or a trait in the list, to see where it appears and how it spread.</p>';return}const k=st.ptrait,tr=TR[k],have=D.trads.filter(t=>t.t.includes(k)),live=have.filter(t=>t.st!=='X').length;
+ const cat=D.cats.find(c=>c.id===tr.cat);
+ const rows=D.families.map(f=>{const all=D.trads.filter(t=>t.f===f.id),n=all.filter(t=>t.t.includes(k)).length;return {f:f.id,p:n/all.length,n,a:all.length}}).sort((a,b)=>b.p-a.p);
+ $('#traitpanel').innerHTML=`<div class="small muted">${esc(cat.name)} › ${esc(tr.sub)}</div><h2 style="margin:4px 0 8px">${esc(tr.name)}</h2><p>${esc(tr.desc)}</p><p class="small"><b>Origins:</b> ${esc(tr.note)}</p>
+ <p>Found in <b>${have.length}</b> of ${D.trads.length} traditions, <b>${live}</b> of them still practised.</p>
+ <div class="ctl"><button class="btn" data-trait="${k}">Trace its history</button><button class="btn" id="hlt">Highlight on family tree</button></div>
+ <h3 style="font-size:15px;margin:10px 0 4px">Share of each family that has it</h3>${rows.map(r=>`<div class="barrow"><span>${esc(FSHORT[r.f])}</span><span class="bar"><span style="width:${r.p*100}%;background:${fc(r.f)}"></span></span><span class="v">${r.n}/${r.a}</span></div>`).join('')}`;
+ $('#hlt').onclick=()=>{st.trait=k;$('#ttrait').value=k;location.hash='tree'}}
+
+/* ---------- BELIEF-SPACE MAP ---------- */
+function drawMap(){const fig=$('#mapfig'),W=fig.clientWidth,H=Math.min(Math.max(W*.62,360),620),P=22,svg=$('#map');svg.setAttribute('width',W);svg.setAttribute('height',H);
+ const X=v=>P+v*(W-2*P),Yv=v=>P+v*(H-2*P);let h='';const show=t=>!st.mapfams.has(t.f);
+ const sel=st.mapsel&&T[st.mapsel];
+ if(sel)sel.sim.slice(0,5).concat(sel.so.slice(0,3)).forEach(([k])=>{const o=T[k];h+=`<line x1="${X(sel.xy[0])}" y1="${Yv(sel.xy[1])}" x2="${X(o.xy[0])}" y2="${Yv(o.xy[1])}" stroke="var(--mut)" stroke-width="1" opacity=".6"/>`});
+ D.trads.forEach(t=>{if(!show(t))return;const on=t.id===st.mapsel;h+=`<circle data-id="${t.id}" cx="${X(t.xy[0])}" cy="${Yv(t.xy[1])}" r="${on?7:4.6}" fill="${fc(t.f)}" fill-opacity="${t.st==='X'?.45:.9}" stroke="${on?'var(--ink)':'var(--card)'}" stroke-width="${on?2:.8}" style="cursor:pointer"><title>${esc(t.n)}</title></circle>`});
+ // family centroid labels
+ D.families.forEach(f=>{const ts=D.trads.filter(t=>t.f===f.id);if(st.mapfams.has(f.id)||!ts.length)return;const cx=ts.reduce((a,t)=>a+t.xy[0],0)/ts.length,cy=ts.reduce((a,t)=>a+t.xy[1],0)/ts.length;
+  h+=`<text x="${X(cx)}" y="${Yv(cy)}" text-anchor="middle" font-size="${W<520?11:13}" font-weight="700" fill="${fc(f.id)}" style="paint-order:stroke;stroke:var(--card);stroke-width:4px" pointer-events="none">${esc(FSHORT[f.id])}</text>`});
+ if(sel){const lab=[st.mapsel,...sel.sim.slice(0,5).map(s=>s[0]),...sel.so.slice(0,3).map(s=>s[0])];lab.forEach((k,i)=>{const o=T[k],x=X(o.xy[0]),y=Yv(o.xy[1]);const anc=x>W*.7?'end':'start';
+  h+=`<text x="${x+(anc==='end'?-8:8)}" y="${y+4}" text-anchor="${anc}" font-size="${i?11.5:13}" font-weight="${i?400:700}" fill="var(--ink)" style="paint-order:stroke;stroke:var(--card);stroke-width:3.5px" pointer-events="none">${esc(o.n)}</text>`})}
+ svg.innerHTML=h;
+ svg.onclick=e=>{const c=e.target.closest('[data-id]');if(!c)return;st.mapsel=c.dataset.id;drawMap();openTrad(c.dataset.id)};
+ fig.onclick=e=>{if(!e.target.closest('[data-id]')&&st.mapsel){st.mapsel='';drawMap()}};
+ const tip=$('#tip');svg.onmousemove=e=>{const c=e.target.closest('[data-id]');if(!c){tip.style.display='none';return}const t=T[c.dataset.id];tip.textContent=`${t.n} · ${FSHORT[t.f]}`;tip.style.display='block';tip.style.left=Math.min(e.clientX+12,innerWidth-270)+'px';tip.style.top=(e.clientY+12)+'px'};svg.onmouseleave=()=>tip.style.display='none'}
+
+/* ---------- COMPARE & MATRIX ---------- */
+function drawCompare(){const a=T[$('#ca').value],b=T[$('#cb').value],A=new Set(a.t),B=new Set(b.t);
+ const both=a.t.filter(k=>B.has(k)),oa=a.t.filter(k=>!B.has(k)),ob=b.t.filter(k=>!A.has(k)),j=both.length/(new Set([...a.t,...b.t]).size||1);
+ const grp=ks=>D.cats.map(c=>{const x=c.subs.flatMap(s=>s.traits).filter(k=>ks.includes(k));return x.length?`<div class="small" style="color:${dark?mix(CCOL[c.id],.3):CCOL[c.id]};font-weight:700;margin-top:6px">${esc(c.name)}</div>`+x.map(k=>`<span class="tchip" data-trait="${k}">${esc(TR[k].name)}</span>`).join(''):''}).join('')||'<p class="muted small">None</p>';
+ $('#cmpout').innerHTML=`<p>They share <b>${both.length}</b> traits. Overlap score: <b>${Math.round(j*100)}%</b>.</p><div class="cmp"><div><h3>Only ${esc(a.n)} (${oa.length})</h3>${grp(oa)}</div><div><h3>Both (${both.length})</h3>${grp(both)}</div><div><h3>Only ${esc(b.n)} (${ob.length})</h3>${grp(ob)}</div></div>`}
+function drawMatrix(){const fs=D.families.map(f=>f.id);const ink=dark?'#ffffff':'#18171b';
+ $('#matrix').innerHTML=`<table class="matrix"><thead><tr><th></th>${fs.map(f=>`<th scope="col">${esc(FSHORT[f])}</th>`).join('')}</tr></thead><tbody>${D.famsim.map((r,i)=>`<tr><th scope="row">${esc(FSHORT[fs[i]])}</th>${r.map(v=>{const a=v==null?0:Math.min(1,v/0.6);return `<td style="background:color-mix(in oklab,var(--acc) ${Math.round(a*85)}%,var(--card));color:${a>.55?'#fff':'var(--ink)'}">${v==null?'':v.toFixed(2).slice(1)}</td>`}).join('')}</tr>`).join('')}</tbody></table>`}
+
+
+/* ---------- AUDIT ---------- */
+const AUL={ok:'Confirmed',fix:'Corrected',disp:'Scholars disagree',part:'Partly confirmed',self:'Tradition\'s own account',unv:'Not yet checked'};
+const AUO=['fix','disp','self','part','ok','unv'];
+const badge=a=>`<span class="badge b-${a}">${AUL[a]}</span>`;
+const srcl=t=>t.src.map(u=>{let h=u;try{const x=new URL(u);h=x.hostname.replace('www.','')+decodeURIComponent(x.pathname).replace('/wiki/',': ').replace('/topic/',': ').replace(/_/g,' ')}catch(e){}return `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(h)}</a>`}).join('');
+st.afilt='';
+function drawAudit(){const c={};D.trads.forEach(t=>c[t.au]=(c[t.au]||0)+1);{const n=D.trads.filter(t=>t.src.length).length,u=D.trads.length-n;$('#aucount').textContent=`${n} of ${D.trads.length} entries cite at least one source`+(u?`; the other ${u} are marked 'Not yet checked'.`:'.')}
+ $('#austats').innerHTML=AUO.map(k=>`<button class="chip" data-au="${k}" aria-pressed="${st.afilt===k}">${badge(k)} ${c[k]||0}</button>`).join('');
+ if(!$('#afam').options.length)$('#afam').innerHTML='<option value="">All families</option>'+D.families.map(f=>`<option value="${f.id}">${esc(f.name)}</option>`).join('');
+ const q=$('#asearch').value.trim().toLowerCase(),fm=$('#afam').value;
+ const ts=D.trads.filter(t=>(!st.afilt||t.au===st.afilt)&&(!fm||t.f===fm)&&(!q||(t.n+' '+t.an).toLowerCase().includes(q))).sort((a,b)=>AUO.indexOf(a.au)-AUO.indexOf(b.au)||a.n.localeCompare(b.n));
+ $('#alist').innerHTML=`<p class="muted small">${ts.length} entries</p>`+ts.slice(0,400).map(t=>`<div class="arow"><div class="list">${badge(t.au)} <b>${tl(t.id)}</b> <span class="muted small">${esc(FSHORT[t.f])} · ${esc(span(t))}</span></div><div class="small" style="margin-top:3px">${esc(t.an)}</div>${t.src.length?`<div class="src">${srcl(t)}</div>`:''}</div>`).join('')+(ts.length>400?'<p class="muted small">Showing the first 400; narrow with search or a filter.</p>':'');
+ $('#austats').onclick=e=>{const b=e.target.closest('[data-au]');if(!b)return;st.afilt=st.afilt===b.dataset.au?'':b.dataset.au;drawAudit()};
+ $('#asearch').oninput=drawAudit;$('#afam').onchange=drawAudit}
+
+/* ---------- TRAIT HISTORY ---------- */
+function drawHistory(){const k=st.htrait;$('#htrait').value=k;const tr=TR[k];
+ const have=D.trads.filter(t=>t.t.includes(k)),gains=have.filter(t=>t.g.includes(k)).sort((a,b)=>a.s-b.s),loss=D.trads.filter(t=>t.l.includes(k)).sort((a,b)=>a.s-b.s);
+ const first=gains[0],live=have.filter(t=>t.st!=='X').length,arose=gains.filter(t=>!t.x.some(x=>T[x].t.includes(k))).length;
+ $('#hhead').innerHTML=`<h2>${esc(tr.name)}</h2><p class="dek" style="margin-top:6px">${esc(tr.desc)}</p><p style="max-width:75ch">${first?`In this dataset it first appears in <b class="list">${tl(first.id)}</b> (${esc(fy(first.s,first.c))}). `:''}It enters ${gains.length} separate lineages, ${arose} without a recorded source, and is present in <b>${have.length}</b> traditions, ${live} of them still practised.</p><p class="small muted" style="max-width:75ch"><b>Scholarly note:</b> ${esc(tr.note)}</p>`;
+ // stacked area of active traditions with trait, by family
+ const fig=$('#hfig'),W=fig.clientWidth;if(W<120)return;const H=W<520?220:280,P={l:34,r:10,t:10,b:26},sc=scale('all',P.l,W-P.r);const N=Math.min(220,Math.floor((W-P.l-P.r)/3));
+ const xs=[...Array(N)].map((_,i)=>sc.inv(P.l+i*(W-P.l-P.r)/(N-1)));
+ const fams=D.families.map(f=>f.id).filter(f=>have.some(t=>t.f===f));
+ const series=xs.map(y=>{const o={};fams.forEach(f=>o[f]=have.filter(t=>t.f===f&&t.s<=y&&(t.e==null||t.e>=y)).length);return o});
+ const mx=Math.max(1,...series.map(o=>fams.reduce((a,f)=>a+o[f],0)));const yy=v=>H-P.b-(v/mx)*(H-P.t-P.b);
+ let h='';const base=xs.map(()=>0);
+ fams.forEach(f=>{const top=series.map((o,i)=>base[i]+o[f]);const px=i=>P.l+i*(W-P.l-P.r)/(N-1);
+  h+=`<path d="M${top.map((v,i)=>`${px(i).toFixed(1)},${yy(v).toFixed(1)}`).join('L')}L${base.map((v,i)=>`${px(i).toFixed(1)},${yy(v).toFixed(1)}`).reverse().join('L')}Z" fill="${fc(f)}" opacity=".85"><title>${esc(FSHORT[f])}</title></path>`;top.forEach((v,i)=>base[i]=v)});
+ const ticks=W<520?[-50000,-3000,0,1000,2000]:[-100000,-50000,-10000,-5000,-3000,-1000,0,500,1000,1500,1750,2000];
+ let hl0=-99;ticks.forEach(y=>{const x=sc(y),lab=y===0?'1 CE':fy(y).replace('c. ',''),lw=lab.length*6.2;if(x-lw/2<hl0+8)return;hl0=x+lw/2;h+=`<line x1="${x}" y1="${P.t}" x2="${x}" y2="${H-P.b}" stroke="var(--line)"/><text x="${x}" y="${H-8}" font-size="11" text-anchor="middle" fill="var(--mut)">${esc(lab)}</text>`});
+ [0,Math.round(mx/2),mx].forEach(v=>h+=`<text x="${P.l-6}" y="${yy(v)+4}" font-size="11" text-anchor="end" fill="var(--mut)">${v}</text>`);
+ h+=`<text x="${P.l}" y="${P.t+10}" font-size="12" fill="var(--mut)" style="paint-order:stroke;stroke:var(--card);stroke-width:3px" dx="6">Traditions with this trait at each date</text>`;
+ const svg=$('#hchart');svg.setAttribute('width',W);svg.setAttribute('height',H);svg.innerHTML=h;
+ $('#hlegend').innerHTML=fams.map(f=>`<span><svg width="10" height="10"><rect width="10" height="10" rx="2" fill="${fc(f)}"/></svg>${esc(FSHORT[f])}</span>`).join('')+'<span>The time axis is stretched: older eras are compressed.</span>';
+ const row=t=>{const src=t.x.filter(x=>T[x].t.includes(k));return `<div class="trow"><span class="d">${esc(fy(t.s,t.c))}</span><span class="list">${tl(t.id)} <span class="tag" style="border-left:3px solid ${fc(t.f)}">${esc(FSHORT[t.f])}</span>${src.length?` <span class="small muted">borrowed from ${src.map(tl).join(', ')}</span>`:' <span class="tag new">arose here</span>'}</span></div>`};
+ $('#horig').innerHTML=gains.map(row).join('')||'<p class="muted">Present from the root.</p>';
+ $('#hloss').innerHTML=loss.map(t=>`<div class="trow"><span class="d">${esc(fy(t.s,t.c))}</span><span class="list">${tl(t.id)} <span class="small muted">from ${tl(t.p)}</span></span></div>`).join('')||'<p class="muted">No branch dropped it.</p>'}
+}
+</script>
+</body>
+</html>

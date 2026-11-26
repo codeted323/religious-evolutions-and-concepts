@@ -1,0 +1,90 @@
+# ---------- HINDU ----------
+psp|Pāśupata Shaivism|hin|sha||150|-|Gujarat, then across India|2|L|+asce|The oldest named Shaiva sect, traced to Lakulīśa. Its ascetics courted public dishonor as a spiritual discipline.|HD
+kpl|Kāpālika|hin|sha|tan|600|1400|India|2|X|+asce +myst|Tantric Shaiva ascetics who carried skull-bowls and haunted cremation grounds, known mostly from hostile sources.|HD
+klm|Kālāmukha|hin|sha||800|1300|Karnataka|1|X|+asce|A medieval Shaiva order with large temple monasteries in Karnataka.|HD
+ssd|Shaiva Siddhānta|hin|sha|tan|700|-|Tamil Nadu, Sri Lanka|2|L|+scri|A dualist Shaiva theology of the Āgamas and Tamil hymns, systematized by Meykandar in the 13th c. It is the main Shaivism of Tamil Nadu.|HD
+agh|Aghori|hin|kpl||1700|-|Varanasi|1|L|+asce|Extreme Shaiva ascetics associated with Baba Kinaram, who break taboos to transcend duality.|HD
+svd|Śrīvidyā (Śrīkula)|hin|sak|tan|900|-|South India|2|L|+myst +medi|A Tantric Shakta tradition worshipping the goddess Lalitā Tripurasundarī through the Śrī Yantra.|HD
+kkl|Kālīkula|hin|sak|tan|800|-|Bengal, Assam, Nepal|2|L||The Shakta 'family of Kālī', centered on fierce goddesses.|HD
+gnp|Gāṇapatya|hin|cls||600|-|Maharashtra|2|L|+heno|A sect devoted to Gaṇeśa as the supreme deity.|HD
+srh|Saura|hin|cls|oir|300|1300|Northern and western India|2|X|+heno|Sun worshippers devoted to Sūrya. The great sun temples, among them Konark (mid-13th c.), date from c. 800–1250.|HD
+kau|Kaumāram|hin|cls||200|-|Tamil Nadu, Sri Lanka|2|L|+heno|Devotion to Murugan (Kārttikeya), rooted in early Tamil worship.|HD
+nmb|Nimbārka Sampradāya|hin|vai||1200|-|Vrindavan, Rajasthan|1|L|+devo|One of the four Vaishnava sampradāyas, teaching both difference and non-difference (dvaitādvaita) and worship of Radha–Krishna. Nimbārka's dates are debated.|HD
+psh|Pushtimarg (Vallabha)|hin|vai|bhk|1500|-|Gujarat, Rajasthan|3|L|+grac +devo|Vallabhācārya's (1479–1531) 'path of grace' worshipping the child Krishna (Shrinathji) at Nathdwara.|FL!
+rmd|Rāmānandī Sampradāya|hin|vai|vis|1400|-|Northern India|2|L|+monk +univ|Rāmānanda's (15th c.) Rama-devotion order, open to all castes. It is the largest Vaishnava monastic order today.|FL!
+wrk|Wārkarī|hin|vai|bhk|1280|-|Maharashtra|3|L|+pilg +danc|The bhakti of Vithoba at Pandharpur, sung by Dnyāneshwar (1275–1296), Nāmdev and Tukārām. Its annual foot pilgrimage draws hundreds of thousands.|FL!
+mhv|Mahānubhāva|hin|vai||1267|-|Maharashtra|2|L|+monk|Chakradhara's sect venerating five incarnations of God and rejecting caste and ritual.|HD
+eks|Ekaśaraṇa Dharma|hin|vai|bhk|1500|-|Assam|3|L|-icon +anic -ethn|Śaṅkaradeva's (1449–1568) Krishna-devotion with no idols and congregational prayer halls (namghar).|FL!
+kbp|Kabir Panth|hin|snt||1450|-|Northern India|3|L||Followers of Kabir (1398–1448), worshipping a formless God through his songs.|FL!
+rvd|Ravidassia|hin|snt|sik|1500|-|Punjab and diaspora|2|L|+scri|Followers of Guru Ravidas (c. 1450–1520), a Dalit poet-saint. In 2010 the community adopted its own scripture, the Amritbani.|FL!
+bsh|Bishnoi|hin|vai||1485|-|Rajasthan|2|L|+land +vegt +ahim|Guru Jambheshwar's 29 rules protect trees and wildlife. In 1730 Bishnois died at Khejarli defending their trees.|HD
+prn|Pranami Sampradāya|hin|vai|sun|1600|-|Gujarat, Nepal|2|L|+sync|Devachandra and Prannāth's Krishna devotion, which cites the Qur'an alongside Hindu texts.|HD
+rvl|Rādhāvallabha Sampradāya|hin|vai||1535|-|Vrindavan|2|L|+devo +fem|Hit Harivansh's devotion centered on Radha as supreme.|HD
+dtt|Dattātreya Sampradāya|hin|cls||1300|-|Maharashtra, Karnataka|2|L|+guru|Devotion to Dattātreya, the guru-god combining Brahma, Vishnu and Shiva, through teachers such as Shripada Shrivallabha.|HD
+mtu|Matua Mahasangha|hin|vai||1860|-|Bengal|2|L|-ethn +just|Harichand Thakur's anti-caste devotional movement among Bengal's Namasudra community.|HD
+mhm|Mahima Dharma|hin|cls||1862|-|Odisha|2|L|-icon +anic +asce|Mahima Swami's movement worshipping the formless Absolute and rejecting idols and caste.|HD
+pth|Prarthana Samaj|hin|brs||1867|-|Maharashtra|3|L||A Bombay theistic reform society inspired by the Brahmo Samaj.|HD
+bkr|Brahma Kumaris|hin|cls||1936|-|India and worldwide|3|L|-poly +mono +medi +celi +vegt +apoc|A women-led movement founded by Lekhraj Kripalani that teaches Raja Yoga meditation, celibacy and a coming world transformation.|HD
+srf|Self-Realization Fellowship|hin|yog|chs|1920|-|USA and India|3|L|+univ +guru|Paramahansa Yogananda's (1893–1952) Kriya Yoga mission, known through 'Autobiography of a Yogi'.|FL!
+tmm|Transcendental Meditation|hin|adv||1958|-|Worldwide|3|L|+univ|Maharishi Mahesh Yogi's (1918–2008) mantra meditation, popularized by the Beatles.|FL
+anm|Ananda Marga|hin|tan||1955|-|India and worldwide|3|L|+just|Prabhat Ranjan Sarkar's (1921–1990) Tantric yoga and social-service movement.|FL!
+ssb|Sathya Sai Organization|hin|cls|suf|1950|-|India and worldwide|3|L|+guru +inc +char|Devotees of Sathya Sai Baba (1926–2011), revered as an avatar, with large charitable works.|FL
+sjy|Sahaja Yoga|hin|tan||1970|-|Worldwide|3|L|+medi +guru|Nirmala Srivastava's (1923–2011) meditation on awakening kundalini.|FL!
+sdy|Siddha Yoga|hin|kas||1956|-|India and USA|2|L|+guru|Swami Muktananda's (1908–1982) path of shaktipat initiation.|FL
+cmm|Chinmaya Mission|hin|adv||1953|-|India and worldwide|3|L|+univ|Swami Chinmayananda's (1916–1993) Vedanta teaching movement.|FL!
+dls|Divine Life Society|hin|adv||1936|-|Rishikesh and worldwide|2|L|+monk|Swami Sivananda's yoga and Vedanta society.|HD
+aur|Integral Yoga (Sri Aurobindo)|hin|adv|tsp|1926|-|Puducherry and Auroville|3|L|+apoc|Sri Aurobindo (1872–1950) taught an evolution of consciousness toward a 'supramental' humanity.|FL
+rjn|Rajneesh movement|hin|tan|zen|1970|-|India, USA|3|L|+guru +sync|Rajneesh (Osho, 1931–1990) blended Tantra, Zen and therapy. His Oregon commune (1981–85) ended in scandal.|FL!
+aol|Art of Living|hin|adv||1981|-|Worldwide|2|L|+medi|Sri Sri Ravi Shankar's breathing and meditation movement.|HD
+rsg|Samarasa Sutha Sanmarga Sangam|hin|sha||1865|-|Tamil Nadu|2|L|+vegt -ethn +univ|Ramalinga Swamigal's (1823–1874) movement of compassion for all life, worship of God as light and rejection of caste.|FL
+# ---------- BUDDHIST ----------
+dgp|Dharmaguptaka|bud|sthv||-200|900|Gandhāra, Central Asia, China|2|X|+scri|An early school whose monastic rules (Vinaya) are still used by East Asian monks and nuns.|SB
+msk|Mahīśāsaka|bud|sthv||-250|700|India, Sri Lanka|1|X||An early Sthavira school whose Vinaya survives in Chinese translation.|SB
+stk|Sautrāntika|bud|sar||150|900|Northwest India|2|X||'Those who rely on the sutras' rejected the Abhidharma's authority and theorized momentary existence.|SB
+lkv|Lokottaravāda|bud|mhs||-100|800|India, Bamiyan|2|X|+inc|A Mahāsāṃghika branch teaching the Buddha's 'supramundane' nature.|SB
+msv|Mūlasarvāstivāda|bud|sar||400|1300|Northern India|2|X||A Sarvāstivāda branch whose Vinaya is followed in Tibetan Buddhism.|SB
+snl|Sanlun (Three Treatises)|bud|mdh||410|900|China|2|X||Chinese Madhyamaka built on Kumārajīva's translations.|SB
+fxg|Faxiang (Chinese Yogācāra)|bud|yga||650|900|China|3|X||Xuanzang and Kuiji's 'mind-only' school after Xuanzang's return from India (645).|SB
+lyz|Lü (Vinaya) school|bud|mah||650|-|China|2|L||Daoxuan's school of monastic discipline.|SB
+zhn|Zhenyan (Chinese Esoteric)|bud|vaj||716|900|Tang China|3|X||Esoteric Buddhism brought to the Tang court between 716 and 720 by Śubhakarasiṃha, Vajrabodhi and Amoghavajra.|CB!
+lnj|Linji (Rinzai) school|bud|cha||860|-|China|3|L||The Chan house of Linji Yixuan, known for shouts, blows and kōans. It is the dominant line of later Chan.|CB
+cdg|Caodong (Sōtō) school|bud|cha||870|-|China|3|L||The Chan house of Dongshan and Caoshan, which stresses silent illumination.|CB
+obk|Ōbaku Zen|bud|lnj|pld|1661|-|Japan|3|L|+devo|Ingen's Ming-style Linji Zen, mixed with Pure Land chanting, at Manpuku-ji.|SB
+fuk|Fuke Zen|bud|lnj||1250|1871|Japan|2|X||The shakuhachi-playing 'monks of emptiness' (komusō), abolished in 1871.|SB
+jis|Ji-shū|bud|jod||1274|-|Japan|3|L|+danc|Ippen's 'time' school of dancing nenbutsu and itinerant preaching.|-
+hss|Hossō|bud|fxg||653|-|Nara, Japan|3|L||Japanese Yogācāra, centered on Kōfuku-ji and Yakushi-ji.|SB
+kgn|Kegon|bud|hya||740|-|Nara, Japan|3|L||Japanese Huayan, centered on Tōdai-ji and its Great Buddha.|SB
+rts|Ritsu|bud|lyz||754|-|Nara, Japan|3|L||Ganjin's Vinaya school at Tōshōdai-ji.|SB
+snn|Shinnyo-en|bud|shg||1936|-|Japan and worldwide|3|L||Shinjō Itō's lay esoteric Buddhism built on Shingon.|JN!
+ryk|Reiyūkai|bud|nch||1924|-|Japan|3|L|+ance|Kakutarō Kubo's lay Lotus Sutra movement centered on ancestor veneration.|JN!
+rkk|Risshō Kōsei-kai|bud|ryk||1938|-|Japan and worldwide|3|L|+cong|Niwano Nikkyō and Naganuma Myōkō's lay Lotus Sutra movement, active in interfaith work.|JN!
+ags|Agon-shū|bud|shg||1954|-|Japan|3|L|+fire|Seiyū Kiriyama's esoteric movement, known for its huge Star Festival fire rite.|JN!
+aum|Aum Shinrikyō|bud|ags|tsp|1987|2000|Japan|3|X|+apoc +guru|Shōkō Asahara's apocalyptic movement, responsible for the 1995 Tokyo subway sarin attack. It reorganized as Aleph and Hikari no Wa.|JN!
+sbk|Sanbō Kyōdan|bud|zen||1954|-|Japan and worldwide|2|L||A lay Zen line combining Sōtō and Rinzai, influential among Western practitioners.|SB
+jgy|Jogye Order|bud|seo||1962|-|South Korea|3|L||The main order of Korean Buddhism, unifying Seon and doctrinal study. It reorganized in 1962.|SB
+tgo|Taego Order|bud|seo||1970|-|South Korea|2|L|-celi|The second-largest Korean order, which allows married clergy.|SB
+jgk|Jingak Order|bud|vaj||1947|-|South Korea|2|L||A Korean lay esoteric order.|SB
+trl|Trúc Lâm|bud|thi|cfo|1299|-|Vietnam|3|L|+sync|The 'Bamboo Grove' Zen school founded by the abdicated Emperor Trần Nhân Tông.|SB
+plv|Plum Village Tradition|bud|thi||1982|-|France and worldwide|3|L|+just +univ|Thích Nhất Hạnh's community of engaged, mindful Buddhism.|TB!
+bsk|Bửu Sơn Kỳ Hương|bud|pld|cfo|1849|-|Mekong Delta, Vietnam|2|L|+apoc +mess|Đoàn Minh Huyên's millenarian lay Buddhism, which later gave rise to Hòa Hảo.|SB
+tah|Tứ Ân Hiếu Nghĩa|bud|bsk|cnf|1867|-|Mekong Delta, Vietnam|2|L|+fili|A reformist movement of the 'four debts of gratitude'.|SB
+hmb|Humanistic Buddhism|bud|mah||1925|-|China, Taiwan, worldwide|2|L|+just +char|Taixu's Republican-era reform, focused on this life and social engagement.|CB
+fgs|Fo Guang Shan|bud|hmb|pld|1967|-|Taiwan and worldwide|2|L|+miss|Master Hsing Yun's global Humanistic Buddhist order.|CB
+tzc|Tzu Chi|bud|hmb||1966|-|Taiwan and worldwide|2|L|+char|Master Cheng Yen's Buddhist relief and medical charity, run largely by laypeople.|CB
+ddm|Dharma Drum Mountain|bud|cha|hmb|1989|-|Taiwan|2|L||Master Sheng Yen's Chan and education foundation.|CB
+kdm|Kadam|bud|vaj||1042|1500|Tibet|3|X|+monk|The school founded around Atiśa's arrival in Tibet (11th c.), absorbed into Gelug.|TB!
+jng|Jonang|bud|vaj||1294|-|Tibet, Qinghai|2|L||Known for the 'other-emptiness' (shentong) view and the Kālacakra. It was suppressed in the 17th c. but survives.|SB
+rim|Rimé movement|bud|vaj|bon|1850|-|Eastern Tibet|3|L|+univ|Jamgön Kongtrul's (1813–1899) nonsectarian renewal that gathered lineages from all schools.|FL!
+nkt|New Kadampa Tradition|bud|gel||1991|-|UK and worldwide|2|L||Kelsang Gyatso's Western Gelug offshoot, in conflict with the Dalai Lama over the deity Dorje Shugden.|SB
+fpm|FPMT|bud|gel||1975|-|Worldwide|2|L||Lamas Yeshe and Zopa's Gelug network for Western students.|SB
+dwy|Diamond Way|bud|kag||1972|-|Europe and worldwide|2|L|-monk -celi|Ole Nydahl's lay Karma Kagyu centers.|SB
+smb|Shambhala|bud|kag|nyi|1976|-|USA, Canada|2|L||Chögyam Trungpa's secularized 'warrior' path of meditation.|SB
+trt|Triratna Buddhist Community|bud|mah|the,zen|1967|-|UK and India|3|L|+just|Sangharakshita's ecumenical Western movement, founded as the FWBO in 1967 and renamed in 2010. It is active among Indian Ambedkarites.|TB
+tmy|Thammayut Nikaya|bud|the||1833|-|Thailand, Cambodia|2|L||A strict reform order begun by Prince Mongkut while he was a monk.|TB
+tfr|Thai Forest Tradition|bud|tmy||1900|-|Thailand and worldwide|3|L|+asce|Ajahn Mun and Ajahn Chah's forest-dwelling meditation lineage.|SB
+dmk|Dhammakaya Movement|bud|the||1970|-|Thailand|2|L|+miss|Wat Phra Dhammakaya's mass meditation movement.|SB
+sta|Santi Asoke|bud|the||1975|-|Thailand|2|L|+vegt|An ascetic, vegetarian reform movement.|SB
+nwr|Newar Buddhism|bud|vaj||1000|-|Kathmandu Valley, Nepal|2|L|+ethn -celi|A non-monastic Vajrayāna kept by Newar priestly castes in Sanskrit.|SB
+azh|Azhaliism|bud|vaj|cfo|900|-|Yunnan, China|1|L|+sync|The esoteric Buddhism of the Bai people of Dali.|SB
+tbs|True Buddha School|bud|vaj|cfo,tao|1975|-|Taiwan and worldwide|2|L|+sync|Lu Sheng-yen's blend of Tibetan, Daoist and Chinese folk practice.|SB
+nss|Nichiren Shōshū|bud|nch||1290|-|Japan|3|L||The school descended from Nikkō, which regards Nichiren as the True Buddha. Soka Gakkai began as its lay organization.|-
